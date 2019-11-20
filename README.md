@@ -122,7 +122,8 @@ Create a setenv.sh file, edit it to add these three lines (Ajust it to your need
 
 		$ ./waf configure --board=blue --toolchain=arm-linux
 
-9) Aplly the patch
+9) Apply the patch
+
  My first build attempt failed due to 3 warnings treated as errors.
  I created a small patch to address these issues:
 
