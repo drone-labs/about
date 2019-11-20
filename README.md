@@ -68,7 +68,90 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 		sudo dd if=output/images/sdcard.img of=/dev/XXX
 
 
+## Build Ardupilot
+As stated above the firmware is shipped with a complete custom version of ardupilot suite.
+Building a custom is not so difficult. In order to avoid any libc conflict, I use the fresh
+buildroot toolchain built in previous step. Programs will be linked against uClibc.
+Building a static version of ardupilot will also work.
 
+1) Get the sources
+
+    cd
+    git clone https://github.com/ArduPilot/ardupilot
+    cd ardupilot
+    
+2)  Install the prerequisites
+
+		The script Tools/environment_install/install-prereqs-ubuntu.sh is a good
+		start to see which packages are missing on my system...
+    
+3) Updates the repository
+
+    git fetch --prune
+    
+4) See all available branches.
+    git branch -a
+      ...
+
+5) Select one of the ArduCopter branches.
+		git checkout Copter-3.6
+		or (not tested)
+    git checkout master
+
+6) Update repository
+		git submodule update --init --recursive
+
+7) Configuration
+
+Create a setenv.sh file, edit it to add these three lines:
+(Ajust it to your needs)
+	cut---------------------------------------------
+	AP_DIR=~/Ardupilot-Blue/ardupilot/Tools/autotest
+	GCC_DIR=~/Ardupilot-Blue/buildroot/output/host/bin
+	export PATH=$GCC_DIR:$AP_DIR:$PATH
+	/cut--------------------------------------------
+ 
+  Then, source the file
+
+		$ . ./setenv.sh
+ 
+8) Configure the Ardupilot build engine (waf) to build programs for the BBBlue and use our toolchain
+		$ ./waf configure --board=blue --toolchain=arm-linux
+
+9) Aplly the patch
+ My first build attempt failed due to 3 warnings treated as errors.
+ I created a small patch to address these issues:
+
+		buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch
+
+ Copy it to ardupilot root and apply it
+ 
+		cp ~/Ardupilot-Blue/buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch ./
+		patch -p1 --verbose -b < 0001-ardupilot-buildroot.patch
+		rm 0001-ardupilot-buildroot.patch
+
+10) Build the programs
+		$ ./waf
+
+	Notes:
+	The build will failed due to 3 warnings treated as errors.
+	I addressed these issues by are easy to address:
+	
+	annoying errors
+	
+	I will try to add a patch to make things easier...
+ 
+When build is finished, we can find progams in build/blue/bin/ directory
+		BUILD SUMMARY
+		Build directory: /home/bruno/ardupilot/build/blue
+		Target               Text     Data  BSS    Total  
+		--------------------------------------------------
+		bin/ardurover        1602527  1640  45092  1649259
+		bin/antennatracker   1308338  1612  41260  1351210
+		bin/arducopter       1804787  1652  48372  1854811
+		bin/arducopter-heli  1769187  1652  48060  1818899
+		bin/arduplane        1809853  1640  47884  1859377
+		bin/ardusub          1562833  1664  44036  1608533
 
 
 
