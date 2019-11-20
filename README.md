@@ -94,7 +94,8 @@ Building a static version of ardupilot will also work.
     
 2)  Install the prerequisites
 
->The script Tools/environment_install/install-prereqs-ubuntu.sh is a good start point to see which packages are missing on the system...
+	>The script Tools/environment_install/install-prereqs-ubuntu.sh is
+	a good start point to see which packages are missing on the system...
 
 3) Update the repository
 
@@ -142,9 +143,9 @@ Building a static version of ardupilot will also work.
 
 10) Build the programs
 
-	$ ./waf
+		$ ./waf
  
-		When build is finished, we can find progams in build/blue/bin/ directory
+	When build is finished, we can find progams in build/blue/bin/ directory
 
 		BUILD SUMMARY  
 		Build directory: /home/bruno/ardupilot/build/blue  
@@ -215,10 +216,10 @@ Finally close the ssh session
 
 
 ## ToDo
-List Softwares version used  
+List Software versions  
 Enable Servo Power Rail  
 Enable Pru input on E4 Header (PRU_E_B input)  
-add QGroundControl tips__
+add QGroundControl tips  
 Configure wifi  
 plug in the Sbus RC receiver signal to DSM2 Header (ttyS4)  
 plug in the GPS (ttyS2)  
