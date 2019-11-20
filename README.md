@@ -117,15 +117,11 @@ Building a static version of ardupilot will also work.
 
 7) Configuration
 
-	First, update the PATH environment variable (Must be Ajdusted to suit configuration):
+	First, update the PATH environment variable (must be ajdusted to suit configuration) :
 
-		> AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest  
-		> GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
-		> export PATH=$GCC_DIR:$AP_DIR:$PATH  
-
-	Then, source the file
-
-		$ . ./setenv.sh
+		$ AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest  
+		$ GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
+		$ export PATH=$GCC_DIR:$AP_DIR:$PATH  
  
 8) Configure the Ardupilot build engine (waf) to build programs for the BBBlue and use our toolchain
 
@@ -133,8 +129,8 @@ Building a static version of ardupilot will also work.
 
 9) Apply the patch
 
-My first build attempt failed due to 3 warnings treated as errors.
-I created a small patch to address these issues:
+	My first build attempt failed due to 3 warnings treated as errors.  
+	I created a small patch to address these issues:
 
 > buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch
 
