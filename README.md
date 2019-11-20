@@ -88,14 +88,13 @@ Building a static version of ardupilot will also work.
 
 1) Get the sources
 
-	$ cd
-	$ git clone https://github.com/ArduPilot/ardupilot
+	$ cd  
+	$ git clone https://github.com/ArduPilot/ardupilot  
 	$ cd ardupilot
     
 2)  Install the prerequisites
 
->The script Tools/environment_install/install-prereqs-ubuntu.sh is a good  
->start to see which packages are missing on my system...
+>The script Tools/environment_install/install-prereqs-ubuntu.sh is a good start point to see which packages are missing on my system...
 
 3) Updates the repository
 
