@@ -32,4 +32,30 @@ and can be managed the standard way :
   Current options for the program are
   
 		-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
- 
+
+## Build the firmware
+1) Get the sources
+
+		git clone https://github.com/drone-labs/buildroot
+
+2) Select the working branch
+
+		git checkout 2019.02.x
+
+3) Update repository
+
+		$ git submodule update --init --recursive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
