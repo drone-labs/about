@@ -76,9 +76,9 @@ Building a static version of ardupilot will also work.
 
 1) Get the sources
 
-    cd
-    git clone https://github.com/ArduPilot/ardupilot
-    cd ardupilot
+		cd
+		git clone https://github.com/ArduPilot/ardupilot
+		cd ardupilot
     
 2)  Install the prerequisites
 
@@ -87,16 +87,17 @@ Building a static version of ardupilot will also work.
     
 3) Updates the repository
 
-    git fetch --prune
+		git fetch --prune
     
 4) See all available branches.
-    git branch -a
-      ...
+
+		git branch -a
+		...
 
 5) Select one of the ArduCopter branches.
 		git checkout Copter-3.6
 		or (not tested)
-    git checkout master
+		git checkout master
 
 6) Update repository
 		git submodule update --init --recursive
@@ -131,27 +132,20 @@ Create a setenv.sh file, edit it to add these three lines:
 		rm 0001-ardupilot-buildroot.patch
 
 10) Build the programs
-		$ ./waf
 
-	Notes:
-	The build will failed due to 3 warnings treated as errors.
-	I addressed these issues by are easy to address:
-	
-	annoying errors
-	
-	I will try to add a patch to make things easier...
+		$ ./waf
  
 When build is finished, we can find progams in build/blue/bin/ directory
-		BUILD SUMMARY
-		Build directory: /home/bruno/ardupilot/build/blue
-		Target               Text     Data  BSS    Total  
-		--------------------------------------------------
-		bin/ardurover        1602527  1640  45092  1649259
-		bin/antennatracker   1308338  1612  41260  1351210
-		bin/arducopter       1804787  1652  48372  1854811
-		bin/arducopter-heli  1769187  1652  48060  1818899
-		bin/arduplane        1809853  1640  47884  1859377
-		bin/ardusub          1562833  1664  44036  1608533
+ > BUILD SUMMARY
+ > Build directory: /home/bruno/ardupilot/build/blue
+ > Target               Text     Data  BSS    Total  
+ > --------------------------------------------------
+ > bin/ardurover        1602527  1640  45092  1649259
+ > bin/antennatracker   1308338  1612  41260  1351210
+ > bin/arducopter       1804787  1652  48372  1854811
+ > bin/arducopter-heli  1769187  1652  48060  1818899
+ > bin/arduplane        1809853  1640  47884  1859377
+ > bin/ardusub          1562833  1664  44036  1608533
 
 
 
