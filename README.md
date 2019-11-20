@@ -24,6 +24,15 @@ For now, u-boot and linux consoles are reachable on ttyS0 (115200, 8N1) and
 connection relies on Linux USB gadget feature, ssh server is Dropbear. The
 wireless connections are not active. the firmware is shipped with a complete
 custom version of ardupilot suite. The filesystem size is 256MB.
+
+I reworked the stock linux device tree source file (am335x-boneblue.dts) to
+replace all the Beaglebone black P8 and P9 Headers pins references by the
+matching Beaglebone blue ones. The same way, I changed the included common
+bone pins configuration (am335x-bone-common-universal-pins.dtsi)
+by a new am335x-boneblue-pins.dtsi file. These changes are made upon linux
+kernel build through a dedicated patch :  
+board/bbblue/patches/linux/0002-Clean-am335x-boneblue-dts-Enable-uio-pruss-bbblue.patch
+
 Once booted, an arduplane instance is automatically created in background,
 and can be managed the standard way :
 
@@ -182,6 +191,7 @@ While logged in, take a first look at the used board resources
 
 	
 Finally close the ssh session
+
 	$ exit
 
 
