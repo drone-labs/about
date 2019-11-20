@@ -95,22 +95,25 @@ Building a static version of ardupilot will also work.
 		...
 
 5) Select one of the ArduCopter branches.
+
 		git checkout Copter-3.6
 		or (not tested)
 		git checkout master
 
 6) Update repository
+
 		git submodule update --init --recursive
 
 7) Configuration
 
 Create a setenv.sh file, edit it to add these three lines:
 (Ajust it to your needs)
-	cut---------------------------------------------
-	AP_DIR=~/Ardupilot-Blue/ardupilot/Tools/autotest
-	GCC_DIR=~/Ardupilot-Blue/buildroot/output/host/bin
-	export PATH=$GCC_DIR:$AP_DIR:$PATH
-	/cut--------------------------------------------
+
+ > cut---------------------------------------------
+ > AP_DIR=~/Ardupilot-Blue/ardupilot/Tools/autotest
+ > GCC_DIR=~/Ardupilot-Blue/buildroot/output/host/bin
+ > export PATH=$GCC_DIR:$AP_DIR:$PATH
+ > /cut--------------------------------------------
  
   Then, source the file
 
@@ -136,6 +139,7 @@ Create a setenv.sh file, edit it to add these three lines:
 		$ ./waf
  
 When build is finished, we can find progams in build/blue/bin/ directory
+
  > BUILD SUMMARY
  > Build directory: /home/bruno/ardupilot/build/blue
  > Target               Text     Data  BSS    Total  
