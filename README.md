@@ -106,14 +106,11 @@ Building a static version of ardupilot will also work.
 
 7) Configuration
 
-Create a setenv.sh file, edit it to add these three lines:
-(Ajust it to your needs)
+Create a setenv.sh file, edit it to add these three lines (Ajust it to your needs):
 
- > cut---------------------------------------------
  > AP_DIR=~/Ardupilot-Blue/ardupilot/Tools/autotest
  > GCC_DIR=~/Ardupilot-Blue/buildroot/output/host/bin
  > export PATH=$GCC_DIR:$AP_DIR:$PATH
- > /cut--------------------------------------------
  
   Then, source the file
 
