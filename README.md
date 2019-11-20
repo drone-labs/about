@@ -96,7 +96,7 @@ Building a static version of ardupilot will also work.
 
 >The script Tools/environment_install/install-prereqs-ubuntu.sh is a good start point to see which packages are missing on the system...
 
-3) Updates the repository
+3) Update the repository
 
 		$ git fetch --prune
     
@@ -108,7 +108,7 @@ Building a static version of ardupilot will also work.
 5) Select one of the ArduCopter branches.
 
 		$ git checkout Copter-3.6
-		$ or (not tested)
+		or (not tested)
 		$ git checkout master
 
 6) Update repository
@@ -117,15 +117,15 @@ Building a static version of ardupilot will also work.
 
 7) Configuration
 
-Create a setenv.sh file, edit it to add these three lines (Ajdust it to suit your configuration):
+	First, update the PATH environment variable (Must be Ajdusted to suit configuration):
 
-> AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest  
-> GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
-> export PATH=$GCC_DIR:$AP_DIR:$PATH  
+		> AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest  
+		> GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
+		> export PATH=$GCC_DIR:$AP_DIR:$PATH  
 
-Then, source the file
+	Then, source the file
 
-	$ . ./setenv.sh
+		$ . ./setenv.sh
  
 8) Configure the Ardupilot build engine (waf) to build programs for the BBBlue and use our toolchain
 
