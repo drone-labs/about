@@ -48,33 +48,36 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 
 1) Get the sources
 
-	$ git clone https://github.com/drone-labs/buildroot
+		$ git clone https://github.com/drone-labs/buildroot
 
 2) Select the working branch
 
-	$ git checkout 2019.02.x
+		$ git checkout 2019.02.x
 
 3) Update repository
 
-	$ git submodule update --init --recursive
+		$ git submodule update --init --recursive
 
 4) Configure buildroot
 
-	$ make bbblue_defconfig
+		$ make bbblue_defconfig
 
 5) Review the configuration
 
-	$ make menuconfig
+		$ make menuconfig
 
 5) Build the firmware
 
-	$ make
+		$ make
 
 6) Take a break...
 
 7) Copy the firmware to a SD card
 
-	$ sudo dd if=output/images/sdcard.img of=/dev/XXX
+		$ sudo dd if=output/images/sdcard.img of=/dev/XXX
+
+8) Fire it up
+
 
 
 ## Build Ardupilot
@@ -190,9 +193,40 @@ While logged in, take a first look at the used board resources
 	tmpfs                   248856        24    248832   0% /run
 
 	
+I2C onboard sensors are OK?
+
+	# /etc/init.d/S60arduplane stop
+	
+	# i2cdetect -r -y 2
+	     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+	00:          -- -- -- -- -- -- -- -- -- 0c -- -- -- 
+	10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- -- 
+	70: -- -- -- -- -- -- 76 --
+	
+	/etc/init.d/S60arduplane start
+
+- 0c = AKM AK8963 compass  
+- 68 = InvenSense MPU-9250 IMU  
+- 76 = Bosch BMP280 barometer.
+
 Finally close the ssh session
 
-	$ exit
+	# exit
+
+
+## ToDo
+List Softwares version used  
+Enable Servo Power Rail  
+Enable Pru input on E4 Header (PRU_E_B input)  
+add QGroundControl tips__
+Configure wifi  
+plug in the Sbus RC receiver signal to DSM2 Header (ttyS4)  
+plug in the GPS (ttyS2)  
 
 
 
