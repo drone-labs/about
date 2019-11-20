@@ -23,14 +23,14 @@ For now, u-boot and linux consoles are reachable on ttyS0 (115200, 8N1) and
 µUSB, via ssh (ssh root@192.168.7.2, default password is root). The Ethernet
 connection relies on Linux USB gadget feature, ssh server is Dropbear. The
 wireless connections are not active. the firmware is shipped with a complete
-custom version of ardupilot suite.
-Once booted, an arduplane instance is automatically launched in background,
+custom version of ardupilot suite. The filesystem size is 256MB.
+Once booted, an arduplane instance is automatically created in background,
 and can be managed the standard way :
 
 	/etc/init.d/S60arduplane.sh start|stop|restart
 
   Current options for the program are
-  
+
 	-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
 
 ## Build the firmware
@@ -39,33 +39,33 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 
 1) Get the sources
 
-	git clone https://github.com/drone-labs/buildroot
+	$ git clone https://github.com/drone-labs/buildroot
 
 2) Select the working branch
 
-	git checkout 2019.02.x
+	$ git checkout 2019.02.x
 
 3) Update repository
 
-	git submodule update --init --recursive
+	$ git submodule update --init --recursive
 
 4) Configure buildroot
 
-	make bbblue_defconfig
+	$ make bbblue_defconfig
 
 5) Review the configuration
 
-	make menuconfig
+	$ make menuconfig
 
 5) Build the firmware
 
-	make
+	$ make
 
 6) Take a break...
 
 7) Copy the firmware to a SD card
 
-	sudo dd if=output/images/sdcard.img of=/dev/XXX
+	$ sudo dd if=output/images/sdcard.img of=/dev/XXX
 
 
 ## Build Ardupilot
@@ -76,33 +76,33 @@ Building a static version of ardupilot will also work.
 
 1) Get the sources
 
-	cd
-	git clone https://github.com/ArduPilot/ardupilot
-		cd ardupilot
+	$ cd
+	$ git clone https://github.com/ArduPilot/ardupilot
+	$ cd ardupilot
     
 2)  Install the prerequisites
 
-	The script Tools/environment_install/install-prereqs-ubuntu.sh is a good
-	start to see which packages are missing on my system...
-    
+>The script Tools/environment_install/install-prereqs-ubuntu.sh is a good  
+>start to see which packages are missing on my system...
+
 3) Updates the repository
 
-	git fetch --prune
+	$ git fetch --prune
     
 4) See all available branches.
 
-	git branch -a
-	...
+	$ git branch -a
+	  ...
 
 5) Select one of the ArduCopter branches.
 
-	git checkout Copter-3.6
-	or (not tested)
-	git checkout master
+	$ git checkout Copter-3.6
+	$ or (not tested)
+	$ git checkout master
 
 6) Update repository
 
-	git submodule update --init --recursive
+	$ git submodule update --init --recursive
 
 7) Configuration
 
@@ -125,13 +125,13 @@ Then, source the file
 My first build attempt failed due to 3 warnings treated as errors.
 I created a small patch to address these issues:
 
-	buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch
+> buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch
 
 Copy it to ardupilot root and apply it
  
-	cp ~/Ardupilot-Blue/buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch ./
-	patch -p1 --verbose -b < 0001-ardupilot-buildroot.patch
-	rm 0001-ardupilot-buildroot.patch
+	$ cp ~/Ardupilot-Blue/buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch ./
+	$ patch -p1 --verbose -b < 0001-ardupilot-buildroot.patch
+	$ rm 0001-ardupilot-buildroot.patch
 
 10) Build the programs
 
@@ -149,6 +149,71 @@ When build is finished, we can find progams in build/blue/bin/ directory
 	bin/arducopter-heli  1769187  1652  48060  1818899  
 	bin/arduplane        1809853  1640  47884  1859377  
 	bin/ardusub          1562833  1664  44036  1608533  
+
+11) Update the target
+
+Assuming the board is running the previously built firmware,
+copy the programs to the right target filesystem location:
+
+	$ scp ./build/blue/bin/a* root@192.168.7.2:/usr/bin/ardupilot
+
+And restart the application
+
+	$ ssh root@192.168.7.2  (default password = root)
+	# /etc/init.d/S60arduplane restart
+
+While logged in, take a first look at the used board resources
+
+	# top
+	Mem: 33052K used, 464664K free, 60K shrd, 528K buff, 5124K cached
+	CPU:   2% usr  45% sys   0% nic  37% idle   0% io   0% irq  14% sirq
+	Load average: 1.88 1.97 1.92 1/107 289
+	PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND
+	278     1 root     S     8428   2%  24% /usr/bin/ardupilot/arduplane -l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
+	...
+	
+	# df
+	Filesystem           1K-blocks      Used Available Use% Mounted on
+	/dev/root               245679     83523    144953  37% /
+	devtmpfs                223768         0    223768   0% /dev
+	tmpfs                   248856         0    248856   0% /dev/shm
+	tmpfs                   248856        36    248820   0% /tmp
+	tmpfs                   248856        24    248832   0% /run
+
+	
+Finally close the ssh session
+	$ exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
