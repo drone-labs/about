@@ -139,16 +139,16 @@ Copy it to ardupilot root and apply it
  
 When build is finished, we can find progams in build/blue/bin/ directory
 
-	> BUILD SUMMARY  
-	> Build directory: /home/bruno/ardupilot/build/blue  
-	> Target								Text		Data	BSS			Total  
-	> --------------------------------------------------  
-	> bin/ardurover        1602527  1640  45092  1649259  
-	> bin/antennatracker   1308338  1612  41260  1351210  
-	> bin/arducopter       1804787  1652  48372  1854811  
-	> bin/arducopter-heli  1769187  1652  48060  1818899  
-	> bin/arduplane        1809853  1640  47884  1859377  
-	> bin/ardusub          1562833  1664  44036  1608533  
+	BUILD SUMMARY  
+	Build directory: /home/bruno/ardupilot/build/blue  
+	Target               text     Data  BSS    Total  
+	==================================================  
+	bin/ardurover        1602527  1640  45092  1649259  
+	bin/antennatracker   1308338  1612  41260  1351210  
+	bin/arducopter       1804787  1652  48372  1854811  
+	bin/arducopter-heli  1769187  1652  48060  1818899  
+	bin/arduplane        1809853  1640  47884  1859377  
+	bin/ardusub          1562833  1664  44036  1608533  
 
 
 
