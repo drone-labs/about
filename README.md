@@ -1,4 +1,5 @@
-# Ardupilot Blue
+Ardupilot Blue
+==============
 Building a lightweight buildroot based firmware for the BeagleBone Blue.
 
 
@@ -106,7 +107,7 @@ Building a static version of ardupilot will also work.
 
 7) Configuration
 
-Create a setenv.sh file, edit it to add these three lines (Ajust it to your needs):
+Create a setenv.sh file, edit it to add these three lines (Ajdust it to suit your configuration):
 
  > AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest
  
