@@ -13,7 +13,8 @@
  reliable, configurable, extendable and reproducible.
  For that, i use my favorite build system: Buildroot (https://buildroot.org)
 
-## In my buildroot fork, i added basic support for the board:
+## Overview
+In my buildroot fork, i added basic support for the board:
   
   - The buildroot default configuration file : ** configs/bbblue_defconfig **
   - Some specific board settings directory   : ** board/bbblue/ **
