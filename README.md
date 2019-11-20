@@ -7,7 +7,7 @@ Another ardupilot setup for the BeagleBone Blue?
 Yes. Mirko Denecke (https://github.com/mirkix/ardupilotblue) has ported
 ardupilot core code for the board and imfatant maintains an excellent guide 
 (https://github.com/imfatant/test) to make things work together.
-So, why? The existing solution relies on a Debian distribution
+So, why? The proposed solution relies on a Debian distribution
 (stretch-console) which provides many, many features that I do not aim to use.
 Instead, I want to have a small memory footprint system while staying
 reliable, configurable, extendable and reproducible.
@@ -23,10 +23,10 @@ For now, u-boot and linux consoles are reachable on ttyS0 (115200, 8N1) and
 µUSB, via ssh (ssh root@192.168.7.2, default password is root). The Ethernet
 connection relies on Linux USB gadget feature, ssh server is Dropbear. The
 wireless connections are not active. the firmware is shipped with a complete
-custom version of ardupilot suite. The filesystem size is 256MB.
+ardupilot binaries suite. The filesystem size is 256MB.
 
 I reworked the stock linux device tree source file (am335x-boneblue.dts) to
-replace all the Beaglebone black P8 and P9 Headers pins references by the
+replace all the Beaglebone black P8 and P9 headers pins references by the
 matching Beaglebone blue ones. The same way, I changed the included common
 bone pins configuration (am335x-bone-common-universal-pins.dtsi)
 by a new am335x-boneblue-pins.dtsi file. These changes are made upon linux
@@ -38,7 +38,7 @@ and can be managed the standard way :
 
 	/etc/init.d/S60arduplane.sh start|stop|restart
 
-  Current options for the program are
+  Default options for the program are
 
 	-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
 
@@ -170,23 +170,23 @@ Building a static version of ardupilot will also work.
 		$ ssh root@192.168.7.2  (default password = root)
 		# /etc/init.d/S60arduplane restart
 
-While logged in, take a first look at the used board resources
+	While logged in, take a first look at the used board resources
 
-	# top
-	Mem: 33052K used, 464664K free, 60K shrd, 528K buff, 5124K cached
-	CPU:   2% usr  45% sys   0% nic  37% idle   0% io   0% irq  14% sirq
-	Load average: 1.88 1.97 1.92 1/107 289
-	PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND
-	278     1 root     S     8428   2%  24% /usr/bin/ardupilot/arduplane -l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
-	...
+		# top
+		Mem: 33052K used, 464664K free, 60K shrd, 528K buff, 5124K cached
+		CPU:   2% usr  45% sys   0% nic  37% idle   0% io   0% irq  14% sirq
+		Load average: 1.88 1.97 1.92 1/107 289
+		PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND
+		278     1 root     S     8428   2%  24% /usr/bin/ardupilot/arduplane -l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
+		...
 	
-	# df
-	Filesystem           1K-blocks      Used Available Use% Mounted on
-	/dev/root               245679     83523    144953  37% /
-	devtmpfs                223768         0    223768   0% /dev
-	tmpfs                   248856         0    248856   0% /dev/shm
-	tmpfs                   248856        36    248820   0% /tmp
-	tmpfs                   248856        24    248832   0% /run
+		# df
+		Filesystem           1K-blocks      Used Available Use% Mounted on
+		/dev/root               245679     83523    144953  37% /
+		devtmpfs                223768         0    223768   0% /dev
+		tmpfs                   248856         0    248856   0% /dev/shm
+		tmpfs                   248856        36    248820   0% /tmp
+		tmpfs                   248856        24    248832   0% /run
 
 	
 I2C onboard sensors are OK?
@@ -210,12 +210,13 @@ I2C onboard sensors are OK?
 - 68 = InvenSense MPU-9250 IMU  
 - 76 = Bosch BMP280 barometer.
 
-Finally close the ssh session
+	Finally close the ssh session
 
 	# exit
 
 
 ## ToDo
+Run from onboard flash  
 List Software versions  
 Enable Servo Power Rail  
 Enable Pru input on E4 Header (PRU_E_B input)  
