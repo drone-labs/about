@@ -108,8 +108,8 @@ Building a static version of ardupilot will also work.
 
 Create a setenv.sh file, edit it to add these three lines (Ajust it to your needs):
 
- > AP_DIR=~/Ardupilot-Blue/ardupilot/Tools/autotest
- > GCC_DIR=~/Ardupilot-Blue/buildroot/output/host/bin
+ > AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest
+ > GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin
  > export PATH=$GCC_DIR:$AP_DIR:$PATH
  
   Then, source the file
@@ -117,6 +117,7 @@ Create a setenv.sh file, edit it to add these three lines (Ajust it to your need
 		$ . ./setenv.sh
  
 8) Configure the Ardupilot build engine (waf) to build programs for the BBBlue and use our toolchain
+
 		$ ./waf configure --board=blue --toolchain=arm-linux
 
 9) Aplly the patch
