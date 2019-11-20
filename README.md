@@ -137,10 +137,11 @@ Copy it to ardupilot root and apply it
 
 	$ ./waf
  
-When build is finished, we can find progams in build/blue/bin/ directory  
+When build is finished, we can find progams in build/blue/bin/ directory
+
 > BUILD SUMMARY  
 > Build directory: /home/bruno/ardupilot/build/blue  
-> Target               Text     Data  BSS    Total  
+> Target								Text		Data	BSS			Total  
 > --------------------------------------------------  
 > bin/ardurover        1602527  1640  45092  1649259  
 > bin/antennatracker   1308338  1612  41260  1351210  
