@@ -26,8 +26,10 @@ wireless connections are not active. the firmware is shipped with a complete
 custom version of ardupilot suite.
 Once booted, an arduplane instance is automatically launched in background,
 and can be managed the standard way :
+
 		/etc/init.d/S60arduplane.sh start|stop|restart
 
   Current options for the program are
+  
 		-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
  
