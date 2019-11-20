@@ -210,7 +210,7 @@ I2C onboard sensors are OK?
 - 68 = InvenSense MPU-9250 IMU  
 - 76 = Bosch BMP280 barometer.
 
-	Finally close the ssh session
+Finally close the ssh session
 
 	# exit
 
