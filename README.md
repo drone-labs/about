@@ -34,6 +34,9 @@ and can be managed the standard way :
 		-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
 
 ## Build the firmware
+
+Assuming all prerequisites are in place (and I have not made any mistake...) this is straightforward
+
 1) Get the sources
 
 		git clone https://github.com/drone-labs/buildroot
@@ -44,12 +47,25 @@ and can be managed the standard way :
 
 3) Update repository
 
-		$ git submodule update --init --recursive
+		git submodule update --init --recursive
 
+4) Configure buildroot
 
+		make bbblue_defconfig
 
+5) Review the configuration
 
+		make menuconfig
 
+5) Build the firmware
+
+		make
+
+6) Take a break...
+
+7) Copy the firmware to a SD card
+
+		sudo dd if=output/images/sdcard.img of=/dev/XXX
 
 
 
