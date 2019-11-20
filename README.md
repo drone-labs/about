@@ -15,7 +15,7 @@
 
 ## Overview
 In my buildroot fork, i added basic support for the board:
-  
+ 
   - The buildroot default configuration file : **configs/bbblue_defconfig**
   - Some specific board settings directory   : **board/bbblue/**
 
@@ -26,8 +26,8 @@ In my buildroot fork, i added basic support for the board:
   custom version of ardupilot suite.
   Once booted, an arduplane instance is automatically launched in background,
   and can be managed the standard way :
-    /etc/init.d/S60arduplane.sh start|stop|restart
-  
+       /etc/init.d/S60arduplane.sh start|stop|restart
+
   Current options for the program are
-    -l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
-  
+       -l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
+ 
