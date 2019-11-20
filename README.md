@@ -88,32 +88,32 @@ Building a static version of ardupilot will also work.
 
 1) Get the sources
 
-	$ cd  
-	$ git clone https://github.com/ArduPilot/ardupilot  
-	$ cd ardupilot
+		$ cd  
+		$ git clone https://github.com/ArduPilot/ardupilot  
+		$ cd ardupilot
     
 2)  Install the prerequisites
 
->The script Tools/environment_install/install-prereqs-ubuntu.sh is a good start point to see which packages are missing on my system...
+>The script Tools/environment_install/install-prereqs-ubuntu.sh is a good start point to see which packages are missing on the system...
 
 3) Updates the repository
 
-	$ git fetch --prune
+		$ git fetch --prune
     
 4) See all available branches.
 
-	$ git branch -a
-	  ...
+		$ git branch -a
+			...
 
 5) Select one of the ArduCopter branches.
 
-	$ git checkout Copter-3.6
-	$ or (not tested)
-	$ git checkout master
+		$ git checkout Copter-3.6
+		$ or (not tested)
+		$ git checkout master
 
 6) Update repository
 
-	$ git submodule update --init --recursive
+		$ git submodule update --init --recursive
 
 7) Configuration
 
