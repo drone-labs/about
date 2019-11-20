@@ -16,8 +16,8 @@
 ## Overview
 In my buildroot fork, i added basic support for the board:
   
-  - The buildroot default configuration file : ** configs/bbblue_defconfig **
-  - Some specific board settings directory   : ** board/bbblue/ **
+  - The buildroot default configuration file : **configs/bbblue_defconfig**
+  - Some specific board settings directory   : **board/bbblue/**
 
   For now, u-boot and linux consoles are reachable on ttyS0 (115200, 8N1) and
   µUSB, via ssh (ssh root@192.168.7.2, default password is root). The Ethernet
