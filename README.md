@@ -53,8 +53,8 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 		$ mkdir br_download
 		$ git clone https://github.com/drone-labs/buildroot
 
-		>br_download is the directory where buildroot will save the files it will download
-		>during build. Using an out of tree directory make them easily available for others builds 
+	> br_download is the directory where buildroot will save the files it will download
+	> during build. Using an out of tree directory make them easily available for others builds 
 
 2) Select the working branch
 
