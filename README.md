@@ -61,9 +61,9 @@ Check free disk space; buildroot is quite gluttonous. 20GB is comfortable
 
 Used disk usage after build
 
-	>   buildroot : 7 666MB
+	> buildroot : 7 666MB
 	> br_download : 3 553MB
-	>   ardupilot :   677MB
+	> ardupilot :   677MB
 
 ## Build the firmware
 
@@ -71,11 +71,11 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 
 1) Get the sources
 
-		$ mkdir Ardupilot-blue
-		$ cd Ardupilot-blue
-		$ mkdir br_download
-		$ git clone https://github.com/drone-labs/buildroot
-		$ cd buildroot
+	$ mkdir Ardupilot-blue
+	$ cd Ardupilot-blue
+	$ mkdir br_download
+	$ git clone https://github.com/drone-labs/buildroot
+	$ cd buildroot
 
 	> br_download is the directory where buildroot will save the files it will download
 	> during build. Using an out of tree directory make them easily available for others builds 
