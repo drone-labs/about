@@ -99,10 +99,10 @@ Thanks to buildroot tools, cross-compile ardupilot is not so difficult. In order
 any libc conflict, I use the fresh buildroot toolchain built in previous step. Programs
 will be linked against uClibc. Building a static version of ardupilot will also work.
 I forked ardupilot (https://github.com/ArduPilot/ardupilot) and created a new branch named
-drone-labs.
-My first build attempt failed due to three warnings treated as errors. These were caused
+drone-labs.  
+My first build attempt failed due to three gcc warnings treated as errors. These were caused
 by gcc complaining about source and destination strings length mismatch upon a snprintf()
-call. giving a little more room to the destination strings did the job.
+call. Giving a little more room to the destination strings did the job.
 After some investigations about the annoying "RCOutputAioPRU.cpp:SIGBUS error generated"
 error, I guessed this was caused by some device tree malformation, bypassed by three gpio
 lines export done into the code (gpio lines 5, 65 and 105 in AP_HAL_Linux/GPIO_BBB.cpp,
