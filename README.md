@@ -150,7 +150,7 @@ will be linked against uClibc. Building a static version of ardupilot will also 
 
 	Copy it to ardupilot root and apply it
  
-		$ cp ~/Ardupilot-Blue/buildroot/board/ardupilot/bbblue/patches/0001-ardupilot-buildroot.patch ./
+		$ cp ~/Ardupilot-Blue/buildroot/board/bbblue/ardupilot/patches/0001-ardupilot-buildroot.patch ./
 		$ patch -p1 --verbose -b < 0001-ardupilot-buildroot.patch
 		$ rm 0001-ardupilot-buildroot.patch
 
