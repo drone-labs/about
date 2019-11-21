@@ -61,9 +61,9 @@ Check free disk space; buildroot is quite gluttonous. 20GB is comfortable
 
 Disk usage after build
 
-> buildroot : 7 666MB
-> br_download : 3 553MB
-> ardupilot :   677MB
+> buildroot   : 7 666MB  
+br_download : 3 553MB  
+ardupilot     :   677MB
 
 ## Build the firmware
 
