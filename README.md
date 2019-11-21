@@ -48,7 +48,13 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 
 1) Get the sources
 
+		$ mkdir Ardupilot-blue
+		$ cd Ardupilot-blue
+		$ mkdir br_download
 		$ git clone https://github.com/drone-labs/buildroot
+
+br_download is the directory where buildroot will save the files it will download
+during build. Using an out of tree directory make them easily available for others builds 
 
 2) Select the working branch
 
@@ -82,9 +88,9 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 
 ## Build Ardupilot
 As stated above the firmware is shipped with a complete custom version of ardupilot suite.
-Building a custom is not so difficult. In order to avoid any libc conflict, I use the fresh
-buildroot toolchain built in previous step. Programs will be linked against uClibc.
-Building a static version of ardupilot will also work.
+Thanks to buildroot tools, cross-compile ardupilot is not so difficult. In order to avoid
+any libc conflict, I use the fresh buildroot toolchain built in previous step. Programs
+will be linked against uClibc. Building a static version of ardupilot will also work.
 
 1) Get the sources
 
@@ -206,7 +212,7 @@ I2C onboard sensors are OK?
 	
 	/etc/init.d/S60arduplane start
 
-- 0c = AKM AK8963 compass  
+- 0c = AKM AK8963 compass (inside the MPU-9250)  
 - 68 = InvenSense MPU-9250 IMU  
 - 76 = Bosch BMP280 barometer.
 
