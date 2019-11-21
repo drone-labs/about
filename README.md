@@ -98,10 +98,20 @@ As stated above the firmware is shipped with a complete custom version of ardupi
 Thanks to buildroot tools, cross-compile ardupilot is not so difficult. In order to avoid
 any libc conflict, I use the fresh buildroot toolchain built in previous step. Programs
 will be linked against uClibc. Building a static version of ardupilot will also work.
+I forked ardupilot (https://github.com/ArduPilot/ardupilot) and created a new branch named
+drone-labs.
+My first build attempt failed due to three warnings treated as errors. These were caused
+by gcc complaining about source and destination strings length mismatch upon a snprintf()
+call. giving a little more room to the destination strings did the job.
+After some investigations about the annoying "RCOutputAioPRU.cpp:SIGBUS error generated"
+error, I guessed this was caused by some device tree malformation, bypassed by three gpio
+lines export done into the code (gpio lines 5, 65 and 105 in AP_HAL_Linux/GPIO_BBB.cpp,
+GPIO_BBB::init() function). Using my provided device tree, this code section is no more
+needed and has been commented out.
 
 1) Get the sources
 
-		$ cd  
+		$ cd Ardupilot-blue
 		$ git clone https://github.com/ArduPilot/ardupilot  
 		$ cd ardupilot
     
@@ -114,16 +124,14 @@ will be linked against uClibc. Building a static version of ardupilot will also 
 
 		$ git fetch --prune
     
-4) See all available branches.
+4) See all available branches
 
 		$ git branch -a
 			...
 
-5) Select one of the ArduCopter branches.
+5) Switch to the drone-labs branch
 
-		$ git checkout Copter-3.6
-		or (not tested)
-		$ git checkout master
+		$ git checkout drone-labs
 
 6) Update repository
 
