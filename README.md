@@ -25,6 +25,12 @@ connection relies on Linux USB gadget feature, ssh server is Dropbear. The
 wireless connections are not active. the firmware is shipped with a complete
 ardupilot binaries suite. The filesystem size is 256MB.
 
+Main software versions
+
+- linux-4.19-rt (from https://github.com/beagleboard/linux.git)
+- busybox-1.29.3
+- uboot-2019.10
+
 I reworked the stock linux device tree source file (am335x-boneblue.dts) to
 replace all the Beaglebone black P8 and P9 headers pins references by the
 matching Beaglebone blue ones. The same way, I changed the included common
@@ -140,11 +146,11 @@ will be linked against uClibc. Building a static version of ardupilot will also 
 	My first build attempt failed due to 3 warnings treated as errors.  
 	I created a small patch to address these issues:
 
-	> buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch
+	> buildroot/board/bbblue/patches/ardupilot/0001-ardupilot-buildroot.patch
 
 	Copy it to ardupilot root and apply it
  
-		$ cp ~/Ardupilot-Blue/buildroot/board/bbblue/patches/0001-ardupilot-buildroot.patch ./
+		$ cp ~/Ardupilot-Blue/buildroot/board/ardupilot/bbblue/patches/0001-ardupilot-buildroot.patch ./
 		$ patch -p1 --verbose -b < 0001-ardupilot-buildroot.patch
 		$ rm 0001-ardupilot-buildroot.patch
 
