@@ -63,7 +63,7 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 
 3) Update repository
 
-		$ git submodule update --init --recursive
+		$ git fetch --prune
 
 4) Configure buildroot
 
