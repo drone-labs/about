@@ -9,7 +9,7 @@ ardupilot core code for the board and imfatant maintains an excellent guide
 (https://github.com/imfatant/test) to make things work together.
 So, why? The proposed solution relies on a Debian distribution
 (stretch-console) which provides many, many features that I do not aim to use.
-Instead, I want to have a small memory footprint system while staying
+Instead, I want to have a simple, small memory footprint system while staying
 reliable, configurable, extendable and reproducible.
 For that, I use my favorite build system: Buildroot (https://buildroot.org)
 
@@ -34,9 +34,9 @@ Main software versions
 I reworked the stock linux device tree source file (am335x-boneblue.dts) to
 replace all the Beaglebone black P8 and P9 headers pins references by the
 matching Beaglebone blue ones. The same way, I changed the included common
-bone pins configuration (am335x-bone-common-universal-pins.dtsi)
-by a new am335x-boneblue-pins.dtsi file. These changes are made upon linux
-kernel build through a dedicated patch :  
+bone pins configuration (am335x-bone-common-universal-pins.dtsi) by a new
+am335x-boneblue-pins.dtsi file. The PRU uio interface is also supported.
+These changes are made upon linux kernel build through a dedicated patch :  
 >board/bbblue/patches/linux/0002-Clean-am335x-boneblue-dts-Enable-uio-pruss-bbblue.patch
 
 Once booted, an arduplane instance is automatically created in background,
@@ -48,21 +48,19 @@ and can be managed the standard way :
 
 	-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
 
-
-Notes:
-My PC : i5-4440@3.1GHz, 8GB RAM, Linux Mint 17.3
+Notes:  
+Host : i5-4440@3.1GHz, 8GB RAM, Linux Mint 17.3  
 Firmware build from scratch takes about 30 minutes
 
-In the rest of the document, ARDUPILOT_BLUE refers to an existing
-common working directory
-e.g : $ mkdir ~/ardupilot_blue
-      $ export ARDUPILOT_BLUE=~/ardupilot_blue
+In the rest of the document, ARDUPILOT_BLUE refers to an existing common working directory, eg:  
+		$ mkdir ~/ardupilot_blue
+		$ export ARDUPILOT_BLUE=~/ardupilot_blue
 
 Check free disk space; buildroot is quite gluttonous. 20GB is comfortable
 Used disk usage after build
-    buildroot : 7 666MB
-  br_download : 3 553MB
-    ardupilot :   677MB
+	>   buildroot : 7 666MB
+	> br_download : 3 553MB
+	>   ardupilot :   677MB
 
 ## Build the firmware
 
