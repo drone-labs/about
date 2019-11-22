@@ -62,10 +62,11 @@ and can be managed the standard way :
 
 + Disk usage after build
 
-	| | |
-	| buildroot : | 7 666MB |
-	| br_download : | 3 553MB |
-	| ardupilot : |   677MB|
+| |
+- | -
+	| buildroot : | 7 666MB
+	| br_download : | 3 553MB
+	| ardupilot : |   677MB
 
 
 	> buildroot		: 7 666MB  
