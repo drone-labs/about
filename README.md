@@ -48,23 +48,23 @@ and can be managed the standard way :
 
 	-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
 
-	**Notes:**
+**Notes:**
 
 + Host : i5-4440@3.1GHz, 8GB RAM, Linux Mint 17.3  
   (Firmware build from scratch takes about 30 minutes)
 
 + In the rest of the document, ARDUPILOT_BLUE refers to an existing common working directory, eg:
 
-	$ mkdir \~/ardupilot_blue
-	$ export ARDUPILOT_BLUE=\~/ardupilot_blue
+		$ mkdir \~/ardupilot_blue
+		$ export ARDUPILOT_BLUE=\~/ardupilot_blue
 
 + Check free disk space; buildroot is quite gluttonous. 20GB is comfortable
 
 + Disk usage after build
 
-	> buildroot   : 7 666MB  
-	br_download : 3 553MB  
-	ardupilot     :   677MB
+	> buildroot		: 7 666MB  
+	br_download		: 3 553MB  
+	ardupilot			:   677MB
 
 ## Build the firmware
 
