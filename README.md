@@ -56,7 +56,7 @@ and can be managed the standard way :
 + In the rest of the document, ARDUPILOT_BLUE refers to an existing common working directory, eg:
 
 		$ mkdir \~/ardupilot_blue
-		$ export ARDUPILOT_BLUE=\~/ardupilot_blue
+		$ export ARDUPILOT_BLUE=~/ardupilot_blue
 
 + Check free disk space; buildroot is quite gluttonous. 20GB is comfortable
 
