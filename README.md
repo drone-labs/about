@@ -62,8 +62,8 @@ and can be managed the standard way :
 
 + Disk usage after build
 
-toto | tata
------| ----
+            |
+------------| ----------
 buildroot : | 7 666MB
 br_download : | 3 553MB
 ardupilot : |   677MB
