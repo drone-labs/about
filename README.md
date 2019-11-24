@@ -5,7 +5,7 @@
 ## Credits
 Another ardupilot setup for the BeagleBone Blue?
 Yes. Mirko Denecke (https://github.com/mirkix/ardupilotblue) has ported
-ardupilot core code for the board and imfatant maintains an excellent guide 
+ardupilot core code for the board and @imfatant maintains an excellent guide 
 (https://github.com/imfatant/test) to make things work together.
 So, why? The proposed solution relies on a Debian distribution
 (stretch-console) which provides many, many features that I do not aim to use.
@@ -65,6 +65,27 @@ and can be managed the standard way :
 		   buildroot : 7 666MB  
 		 br_download : 3 553MB  
 		  ardupilot  :   677MB
+
++ Configurable pins through /sys/devices/platform/ocp
+
+		Name                Signal      GPIO    Bone      Ball    Configuarion
+		ocp:DSM2_1_pinmux   UART4_RX    0_30    P9_11     T17     uart
+		ocp:E4_4_pinmux     PRU_E_B     1_15    P8_15     U13     pruin_pu
+		ocp:GP0_3_pinmux    GPIO1_25    1_25    -----     U16     gpio_pu
+		ocp:GP0_4_pinmux    GPIO1_17    1_17    P9_23     V14     gpio_pd
+		ocp:GP0_5_pinmux    GPIO3_20    3_20    P9_91     D13     gpio_pd
+		ocp:GP0_6_pinmux    GPIO3_17    3_17    P9_28     C12     gpio_pd
+		ocp:GP1_3_pinmux    GPIO3_2     3_2     -----     J15     gpio_pu
+		ocp:GP1_4_pinmux    GPIO3_1     3_1     -----     H17     gpio_pu
+		ocp:GPS_3_pinmux    UART2_RX    0_2     P9_22     A17     uart
+		ocp:GPS_4_pinmux    UART2_TX    0_3     P9_21     B17     uart
+		ocp:S11_6_pinmux    SPI1_SS1    0_29    -----     H18     spi
+		ocp:S12_6_pinmux    SPI1_SS2    0_7     P9_42     C18     spi
+		ocp:S1X_3_pinmux    SPI1_MOSI   3_16    P9_30     D12     spi
+		ocp:S1X_4_pinmux    SPI1_MISO   3_15    P9_29     B13     spi
+		ocp:S1X_5_pinmux    SPI1_SCK    3_14    P9_31     A13     spi_sclk
+		ocp:UT1_3_pinmux    UART1_RX    0_14    P9_26     D16     uart
+		ocp:UT1_4_pinmux    UART1_TX    0_15    P9_24     D15     uart
 
 ## Build the firmware
 
@@ -145,7 +166,7 @@ needed and has been commented out.
 4) See all available branches
 
 		$ git branch -a
-			...
+		...
 
 5) Switch to the drone-labs branch
 
@@ -167,20 +188,7 @@ needed and has been commented out.
 
 		$ ./waf configure --board=blue --toolchain=arm-linux
 
-9) Apply the patch
-
-	My first build attempt failed due to 3 warnings treated as errors.  
-	I created a small patch to address these issues:
-
-	> buildroot/board/bbblue/patches/ardupilot/0001-ardupilot-buildroot.patch
-
-	Copy it to ardupilot root and apply it
- 
-		$ cp ~/Ardupilot-Blue/buildroot/board/bbblue/ardupilot/patches/0001-ardupilot-buildroot.patch ./
-		$ patch -p1 --verbose -b < 0001-ardupilot-buildroot.patch
-		$ rm 0001-ardupilot-buildroot.patch
-
-10) Build the programs
+9) Build the programs
 
 		$ ./waf
  
@@ -197,7 +205,7 @@ needed and has been commented out.
 		bin/arduplane        1809853  1640  47884  1859377  
 		bin/ardusub          1562833  1664  44036  1608533  
 
-11) Update the target
+10) Update the target
 
 	Assuming the board is running the previously built firmware,
 	copy the programs to the right target filesystem location:
@@ -256,13 +264,12 @@ Finally close the ssh session
 
 ## ToDo
 Run from onboard flash  
-List Software versions  
 Enable Servo Power Rail  
 Enable Pru input on E4 Header (PRU_E_B input)  
 add QGroundControl tips  
 Configure wifi  
 plug in the Sbus RC receiver signal to DSM2 Header (ttyS4)  
-plug in the GPS (ttyS2)  
+
 
 
 
