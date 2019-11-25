@@ -156,11 +156,11 @@ needed and has been commented out.
 In `libraries/AP_HAL_Linux/HAL_Linux_Class.cpp`, I changed "`ttyO4`" to "`ttyS4`" where the
 RC inputs drivers are instantiated (around line 140) :
 
-		static RCInput_Multi rcinDriver {
-		   2,
-		   new RCInput_AioPRU,
-		   new RCInput_RCProtocol(NULL, "/dev/ttyS4")
-		};
+	static RCInput_Multi rcinDriver {
+	   2,
+	   new RCInput_AioPRU,
+	   new RCInput_RCProtocol(NULL, "/dev/ttyS4")
+	};
 
 From what I understand, two driver classes are instantiated; the first, `RCInput_AioPRU`
 is "attached" to the `PRU_E_B` signal (E4 pin4). The second, `RCInput_RCProtocol(NULL, "/dev/ttyS4")`
@@ -170,90 +170,90 @@ over the given serial port (here /dev/ttyS4).
 
 ### 1. Get the sources
 
-		$ cd Ardupilot-blue
-		$ https://github.com/drone-labs/ardupilot
-		$ cd ardupilot
+	$ cd Ardupilot-blue
+	$ https://github.com/drone-labs/ardupilot
+	$ cd ardupilot
     
 ### 2.  Install the prerequisites
 
-	>The script Tools/environment_install/install-prereqs-ubuntu.sh is
-	a good start point to see which packages are missing on the system...
+>The script Tools/environment_install/install-prereqs-ubuntu.sh is
+a good start point to see which packages are missing on the system...
 
 ### 3. Update the repository
 
-		$ git fetch --prune
+	$ git fetch --prune
     
 ### 4. See all available branches
 
-		$ git branch -a
-		...
+	$ git branch -a
+	...
 
 ### 5. Switch to the drone-labs branch
 
-		$ git checkout drone-labs
+	$ git checkout drone-labs
 
 ### 6. Update repository
 
-		$ git submodule update --init --recursive
+	$ git submodule update --init --recursive
 
 ### 7. Configuration
 
-	First, update the PATH environment variable (must be ajdusted to suit configuration) :
+First, update the PATH environment variable (must be ajdusted to suit configuration) :
 
-		$ AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest  
-		$ GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
-		$ export PATH=$GCC_DIR:$AP_DIR:$PATH  
+	$ AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest  
+	$ GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
+	$ export PATH=$GCC_DIR:$AP_DIR:$PATH  
  
 ### 8. Configure the Ardupilot build engine (waf) to build programs for the BBBlue and use our toolchain
 
-		$ ./waf configure --board=blue --toolchain=arm-linux
+	$ ./waf configure --board=blue --toolchain=arm-linux
 
 ### 9. Build the programs
 
-		$ ./waf
+	$ ./waf
  
-	When build is finished, we can find progams in build/blue/bin/ directory
+When build is finished, we can find progams in build/blue/bin/ directory
 
-		BUILD SUMMARY  
-		Build directory: /home/bruno/ardupilot/build/blue  
-		Target               text     Data  BSS    Total  
-		==================================================  
-		bin/ardurover        1602527  1640  45092  1649259  
-		bin/antennatracker   1308338  1612  41260  1351210  
-		bin/arducopter       1804787  1652  48372  1854811  
-		bin/arducopter-heli  1769187  1652  48060  1818899  
-		bin/arduplane        1809853  1640  47884  1859377  
-		bin/ardusub          1562833  1664  44036  1608533  
+	BUILD SUMMARY  
+	Build directory: /home/bruno/ardupilot/build/blue  
+	Target               text     Data  BSS    Total  
+	==================================================  
+	bin/ardurover        1602527  1640  45092  1649259  
+	bin/antennatracker   1308338  1612  41260  1351210  
+	bin/arducopter       1804787  1652  48372  1854811  
+	bin/arducopter-heli  1769187  1652  48060  1818899  
+	bin/arduplane        1809853  1640  47884  1859377  
+	bin/ardusub          1562833  1664  44036  1608533  
 
 ### 10. Update the target
 
-	Assuming the board is running the previously built firmware,
-	copy the programs to the right target filesystem location:
+Assuming the board is running the previously built firmware,
+copy the programs to the right target filesystem location:
 
-		$ scp ./build/blue/bin/a* root@192.168.7.2:/usr/bin/ardupilot
+	$ scp ./build/blue/bin/a* root@192.168.7.2:/usr/bin/ardupilot
 
-	And restart the application
+And restart the application
 
-		$ ssh root@192.168.7.2  (default password = root)
-		# /etc/init.d/S60arduplane restart
+	$ ssh root@192.168.7.2  (default password = root)
+	# /etc/init.d/S60arduplane restart
 
-	While logged in, take a first look at the used board resources
+While logged in, take a first look at the used board resources
 
-		# top
-		Mem: 33052K used, 464664K free, 60K shrd, 528K buff, 5124K cached
-		CPU:   2% usr  45% sys   0% nic  37% idle   0% io   0% irq  14% sirq
-		Load average: 1.88 1.97 1.92 1/107 289
-		PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND
-		278     1 root     S     8428   2%  24% /usr/bin/ardupilot/arduplane -l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
-		...
+	# top
+	Mem: 33052K used, 464664K free, 60K shrd, 528K buff, 5124K cached
+	CPU:   2% usr  45% sys   0% nic  37% idle   0% io   0% irq  14% sirq
+	Load average: 1.88 1.97 1.92 1/107 289
+	PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND
+	278     1 root     S     8428   2%  24% /usr/bin/ardupilot/arduplane -l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
+	...
 	
-		# df
-		Filesystem           1K-blocks      Used Available Use% Mounted on
-		/dev/root               245679     83523    144953  37% /
-		devtmpfs                223768         0    223768   0% /dev
-		tmpfs                   248856         0    248856   0% /dev/shm
-		tmpfs                   248856        36    248820   0% /tmp
-		tmpfs                   248856        24    248832   0% /run
+	# df
+	Filesystem           1K-blocks      Used Available Use% Mounted on
+	/dev/root               245679     83523    144953  37% /
+	devtmpfs                223768         0    223768   0% /dev
+	tmpfs                   248856         0    248856   0% /dev/shm
+	tmpfs                   248856        36    248820   0% /tmp
+	tmpfs                   248856        24    248832   0% /run
 
 	
 I2C onboard sensors are OK?
