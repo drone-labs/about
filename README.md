@@ -48,6 +48,11 @@ and can be managed the standard way :
 
 	-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
 
+In the same way, I wrote a script to control the servos power rail (S55servopower) and
+another to control the PRU_E_B line configuration (default or pruecapin_pu)
+in order to use it as a Sbus RC input (S56pru_e_b). S55servopower is not active by default
+(renamed to X55servopower)
+
 **Notes:**
 
 + Host : i5-4440@3.1GHz, 8GB RAM, Linux Mint 17.3  
@@ -89,9 +94,9 @@ and can be managed the standard way :
 
 ## Build the firmware
 
-Assuming all prerequisites are in place (and I have not made any mistake...) this is straightforward
+Assuming all prerequisites are met (and I have not made any mistake...) this is straightforward
 
-1) Get the sources
+### 1. Get the sources
 
 		$ mkdir Ardupilot-blue
 		$ cd Ardupilot-blue
@@ -102,33 +107,33 @@ Assuming all prerequisites are in place (and I have not made any mistake...) thi
 	> br_download is the directory where buildroot will save the files it will download
 	> during build. Using an out of tree directory make them easily available for others builds 
 
-2) Select the working branch
+### 2. Select the working branch
 
 		$ git checkout 2019.02.x
 
-3) Update repository
+### 3. Update repository
 
 		$ git fetch --prune
 
-4) Configure buildroot
+### 4. Configure buildroot
 
 		$ make bbblue_defconfig
 
-5) Review the configuration
+### 5. Review the configuration
 
 		$ make menuconfig
 
-5) Build the firmware
+### 6. Build the firmware
 
 		$ make
 
-6) Take a break...
+### 7. Take a break...
 
-7) Copy the firmware to a SD card
+### 8. Copy the firmware to a SD card
 
 		$ sudo dd if=output/images/sdcard.img of=/dev/XXX
 
-8) Fire it up
+### 9. Fire it up
 
 
 
@@ -149,7 +154,7 @@ GPIO_BBB::init() function). Using my provided device tree, this code section is 
 needed and has been commented out.
 
 In libraries/AP_HAL_Linux/HAL_Linux_Class.cpp, I changed "ttyO4" to "ttyS4" where the
-RC inputs drivers are declared (aroun line 140):
+RC inputs drivers are declared (aroun line 140) :
 
 		static RCInput_Multi rcinDriver {
 		   2,
@@ -159,39 +164,39 @@ RC inputs drivers are declared (aroun line 140):
 
 From what I understand, two driver classes are instantiated; the first, RCInput_AioPRU
 is "attached" to the PRU_E_B signal (E4 pin4). The second, RCInput_RCProtocol(NULL, "/dev/ttyS4")
-is attached to the UART4_RX (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
+is attached to the UART4_RX signal (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
 over the given serial port (here /dev/ttyS4).
 
 
-1) Get the sources
+### 1. Get the sources
 
 		$ cd Ardupilot-blue
 		$ https://github.com/drone-labs/ardupilot
 		$ cd ardupilot
     
-2)  Install the prerequisites
+### 2.  Install the prerequisites
 
 	>The script Tools/environment_install/install-prereqs-ubuntu.sh is
 	a good start point to see which packages are missing on the system...
 
-3) Update the repository
+### 3. Update the repository
 
 		$ git fetch --prune
     
-4) See all available branches
+### 4. See all available branches
 
 		$ git branch -a
 		...
 
-5) Switch to the drone-labs branch
+### 5. Switch to the drone-labs branch
 
 		$ git checkout drone-labs
 
-6) Update repository
+### 6. Update repository
 
 		$ git submodule update --init --recursive
 
-7) Configuration
+### 7. Configuration
 
 	First, update the PATH environment variable (must be ajdusted to suit configuration) :
 
@@ -199,11 +204,11 @@ over the given serial port (here /dev/ttyS4).
 		$ GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
 		$ export PATH=$GCC_DIR:$AP_DIR:$PATH  
  
-8) Configure the Ardupilot build engine (waf) to build programs for the BBBlue and use our toolchain
+### 8. Configure the Ardupilot build engine (waf) to build programs for the BBBlue and use our toolchain
 
 		$ ./waf configure --board=blue --toolchain=arm-linux
 
-9) Build the programs
+### 9. Build the programs
 
 		$ ./waf
  
@@ -220,7 +225,7 @@ over the given serial port (here /dev/ttyS4).
 		bin/arduplane        1809853  1640  47884  1859377  
 		bin/ardusub          1562833  1664  44036  1608533  
 
-10) Update the target
+### 10. Update the target
 
 	Assuming the board is running the previously built firmware,
 	copy the programs to the right target filesystem location:
@@ -279,11 +284,9 @@ Finally close the ssh session
 
 ## ToDo
 Run from onboard flash  
-Enable Servo Power Rail  
-Enable Pru input on E4 Header (PRU_E_B input)  
 add QGroundControl tips  
 Configure wifi  
-plug in the Sbus RC receiver signal to DSM2 Header (ttyS4)  
+plug in the Sbus RC receiver signal to E4 Header  
 
 
 
