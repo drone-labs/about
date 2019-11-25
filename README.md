@@ -31,13 +31,13 @@ Main software versions
 - busybox-1.29.3
 - uboot-2019.10
 
-I reworked the stock linux device tree source file (am335x-boneblue.dts) to
+I reworked the stock linux device tree source file (`am335x-boneblue.dts`) to
 replace all the Beaglebone black P8 and P9 headers pins references by the
 matching Beaglebone blue ones. The same way, I changed the included common
-bone pins configuration (am335x-bone-common-universal-pins.dtsi) by a new
-am335x-boneblue-pins.dtsi file. The PRU uio interface is also supported.
+bone pins configuration (`am335x-bone-common-universal-pins.dtsi`) by a new
+`am335x-boneblue-pins.dtsi` file. The PRU uio interface is also supported.
 These changes are made upon linux kernel build through a dedicated patch :  
->board/bbblue/patches/linux/0002-Clean-am335x-boneblue-dts-Enable-uio-pruss-bbblue.patch
+>`board/bbblue/patches/linux/0002-Clean-am335x-boneblue-dts-Enable-uio-pruss-bbblue.patch`
 
 Once booted, an arduplane instance is automatically created in background,
 and can be managed the standard way :
@@ -48,17 +48,17 @@ and can be managed the standard way :
 
 	-l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5
 
-In the same way, I wrote a script to control the servos power rail (S55servopower) and
-another to control the PRU_E_B line configuration (default or pruecapin_pu)
-in order to use it as a Sbus RC input (S56pru_e_b). S55servopower is not active by default
-(renamed to X55servopower)
+In the same way, I wrote a script to control the servos power rail (`S55servopower`) and
+another to control the `PRU_E_B` line configuration (`default` or `pruecapin_pu`)
+in order to use it as a Sbus RC input (`S56pru_e_b`). `S55servopower` is not active by default
+(renamed to `X55servopower`)
 
 **Notes:**
 
 + Host : i5-4440@3.1GHz, 8GB RAM, Linux Mint 17.3  
   (Firmware build from scratch takes about 30 minutes)
 
-+ In the rest of the document, ARDUPILOT_BLUE refers to an existing common working directory, eg:
++ In the rest of the document, `ARDUPILOT_BLUE` refers to an existing common working directory, eg:
 
 		$ mkdir ~/ardupilot_blue
 		$ export ARDUPILOT_BLUE=~/ardupilot_blue
@@ -145,16 +145,16 @@ will be linked against uClibc. Building a static version of ardupilot will also 
 I forked ardupilot (https://github.com/ArduPilot/ardupilot) and created a new branch named
 drone-labs.  
 My first build attempt failed due to three gcc warnings treated as errors. These were caused
-by gcc complaining about source and destination strings length mismatch upon a snprintf()
+by gcc complaining about source and destination strings length mismatch upon a `snprintf()`
 call. Giving a little more room to the destination strings did the job.
-After some investigations about the annoying "RCOutputAioPRU.cpp:SIGBUS error generated"
+After some investigations about the annoying "`RCOutputAioPRU.cpp:SIGBUS error generated`"
 error, I guessed this was caused by some device tree malformation, bypassed by three gpio
-lines export done into the code (gpio lines 5, 65 and 105 in AP_HAL_Linux/GPIO_BBB.cpp,
-GPIO_BBB::init() function). Using my provided device tree, this code section is no more
+lines export done into the code (gpio lines 5, 65 and 105 in `AP_HAL_Linux/GPIO_BBB.cpp`,
+`GPIO_BBB::init()` function). Using my provided device tree, this code section is no more
 needed and has been commented out.
 
-In libraries/AP_HAL_Linux/HAL_Linux_Class.cpp, I changed "ttyO4" to "ttyS4" where the
-RC inputs drivers are declared (aroun line 140) :
+In `libraries/AP_HAL_Linux/HAL_Linux_Class.cpp`, I changed "`ttyO4`" to "`ttyS4`" where the
+RC inputs drivers are instantiated (around line 140) :
 
 		static RCInput_Multi rcinDriver {
 		   2,
@@ -162,9 +162,9 @@ RC inputs drivers are declared (aroun line 140) :
 		   new RCInput_RCProtocol(NULL, "/dev/ttyS4")
 		};
 
-From what I understand, two driver classes are instantiated; the first, RCInput_AioPRU
-is "attached" to the PRU_E_B signal (E4 pin4). The second, RCInput_RCProtocol(NULL, "/dev/ttyS4")
-is attached to the UART4_RX signal (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
+From what I understand, two driver classes are instantiated; the first, `RCInput_AioPRU`
+is "attached" to the `PRU_E_B` signal (E4 pin4). The second, `RCInput_RCProtocol(NULL, "/dev/ttyS4")`
+is attached to the `UART4_RX` signal (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
 over the given serial port (here /dev/ttyS4).
 
 
