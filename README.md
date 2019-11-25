@@ -148,6 +148,21 @@ lines export done into the code (gpio lines 5, 65 and 105 in AP_HAL_Linux/GPIO_B
 GPIO_BBB::init() function). Using my provided device tree, this code section is no more
 needed and has been commented out.
 
+In libraries/AP_HAL_Linux/HAL_Linux_Class.cpp, I changed "ttyO4" to "ttyS4" where the
+RC inputs drivers are declared (aroun line 140):
+
+		static RCInput_Multi rcinDriver {
+		   2,
+		   new RCInput_AioPRU,
+		   new RCInput_RCProtocol(NULL, "/dev/ttyS4")
+		};
+
+From what I understand, two driver classes are instantiated; the first, RCInput_AioPRU
+is "attached" to the PRU_E_B signal (E4 pin4). The second, RCInput_RCProtocol(NULL, "/dev/ttyS4")
+is attached to the UART4_RX (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
+over the given serial port (here /dev/ttyS4).
+
+
 1) Get the sources
 
 		$ cd Ardupilot-blue
