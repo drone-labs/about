@@ -164,9 +164,8 @@ RC inputs drivers are instantiated (around line 140) :
 
 From what I understand, two driver classes are instantiated; the first, `RCInput_AioPRU`
 is "attached" to the `PRU_E_B` signal (E4 pin4). The second, `RCInput_RCProtocol(NULL, "/dev/ttyS4")`
-is attached to the `UART4_RX` signal (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
+is "attached" to the `UART4_RX` signal (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
 over the given serial port (here /dev/ttyS4).
-
 
 ### 1. Get the sources
 
@@ -286,6 +285,7 @@ Finally close the ssh session
 Run from onboard flash  
 add QGroundControl tips  
 Configure wifi  
+Build ardupilot examples  
 plug in the Sbus RC receiver signal to E4 Header  
 
 
