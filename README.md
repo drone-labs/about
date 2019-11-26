@@ -61,20 +61,20 @@ in order to use it as a Sbus RC input (**`S56pru_e_b`**). **`S55servopower`** is
 + throughout the rest of the document, **`ARDUPILOT_BLUE`** refers to an existing common root working
 directory, eg:
 
-**`  $ mkdir ~/ardupilot_blue`**  
-**`  $ export ARDUPILOT_BLUE=~/ardupilot_blue`**
+**`    $ mkdir ~/ardupilot_blue`**  
+**`    $ export ARDUPILOT_BLUE=~/ardupilot_blue`**
 
 + Check free disk space; buildroot is quite gluttonous. **20GB** is comfortable
 
 + Disk usage after build
 
-**`    buildroot : 7 666MB`**  
-**`  br_download : 3 553MB`**  
-**`   ardupilot  :   677MB`**
+**`      buildroot : 7 666MB`**  
+**`    br_download : 3 553MB`**  
+**`     ardupilot  :   677MB`**
 
 + Configurable pins through /sys/devices/platform/ocp
 
-		Name                Signal      GPIO    Bone      Ball    Configuarion
+		**Name                Signal      GPIO    Bone      Ball    Configuration**
 		ocp:DSM2_1_pinmux   UART4_RX    0_30    P9_11     T17     uart
 		ocp:E4_4_pinmux     PRU_E_B     1_15    P8_15     U13     pruin_pu
 		ocp:GP0_3_pinmux    GPIO1_25    1_25    -----     U16     gpio_pu
