@@ -61,7 +61,7 @@ in order to use it as a Sbus RC input (**`S56pru_e_b`**). **`S55servopower`** is
 + throughout the rest of the document, **`ARDUPILOT_BLUE`** refers to an existing common root working
 directory, eg:
 
-**`    $ mkdir ~/ardupilot_blue`  
+**`    $ mkdir ~/ardupilot_blue  
     $ export ARDUPILOT_BLUE=~/ardupilot_blue`**
 
 + Check free disk space; buildroot is quite gluttonous. **20GB** is comfortable
