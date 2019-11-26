@@ -50,10 +50,10 @@ Default options for the program are
 
 **`  -l /var/APM/logs -A /dev/ttyS1 -B /dev/ttyS2 -C /dev/ttyS5`**
 
-In the same way, I wrote a script to control the servos power rail (`S55servopower`) and
-another to control the `PRU_E_B` line configuration (`default` or `pruecapin_pu`)
-in order to use it as a Sbus RC input (`S56pru_e_b`). `S55servopower` is not active by default
-(renamed to `X55servopower`)
+In the same way, I wrote a script to control the servos power rail (**`S55servopower`**) and
+another to control the **`PRU_E_B`** line configuration (**`default`** or **`pruecapin_pu`**)
+in order to use it as a Sbus RC input (**`S56pru_e_b`**). **`S55servopower`** is not active by default
+(renamed to **`X55servopower`**)
 
 **Notes:**
 
