@@ -19,11 +19,11 @@ In my buildroot fork, I added basic support for the board:
 - The buildroot default configuration file : **`configs/bbblue_defconfig`**
 - Dedicated board settings directory       : **`board/bbblue/`**
 
-For now, u-boot and linux consoles are reachable on ttyS0 (115200, 8N1) and
+For now, u-boot and linux console is reachable on ttyS0 (115200, 8N1) and
 µUSB, via ssh (ssh root@192.168.7.2, default password is root). The Ethernet
 connection relies on Linux USB gadget feature, ssh server is Dropbear. The
 wireless connections are not active. the firmware is shipped with a complete
-ardupilot binaries suite. The filesystem size is 256MB.
+ardupilot binaries suite. The filesystem size is 256MB (less than 100MB used).
 
 Main software versions
 
@@ -31,7 +31,7 @@ Main software versions
 - busybox-1.29.3
 - uboot-2019.10
 
-I reworked the stock linux device tree source file (`am335x-boneblue.dts`) to
+I reworked the stock linux device tree source file (**`am335x-boneblue.dts`**) to
 replace all the Beaglebone black P8 and P9 headers pins references by the
 matching Beaglebone blue ones. The same way, I changed the included common
 bone pins configuration (`am335x-bone-common-universal-pins.dtsi`) by a new
