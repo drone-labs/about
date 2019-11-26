@@ -58,7 +58,8 @@ in order to use it as a Sbus RC input (**`S56pru_e_b`**). **`S55servopower`** is
 + Host : i5-4440@3.1GHz, 8GB RAM, Linux Mint 17.3  
   (Firmware build from scratch takes about 30 minutes)
 
-+ In the rest of the document, **`ARDUPILOT_BLUE`** refers to an existing common working directory, eg:
++ throughout the rest of the document, **`ARDUPILOT_BLUE`** refers to an existing common root working
+directory, eg:
 
 **`  $ mkdir ~/ardupilot_blue`**
 **`  $ export ARDUPILOT_BLUE=~/ardupilot_blue`**
@@ -98,40 +99,39 @@ Assuming all prerequisites are met (and I have not made any mistake...) this is 
 
 ### 1. Get the sources
 
-	$ mkdir Ardupilot-blue
-	$ cd Ardupilot-blue
-	$ mkdir br_download
-	$ git clone https://github.com/drone-labs/buildroot
-	$ cd buildroot
+**`  $ cd $ARDUPILOT_BLUE`**
+**`  $ mkdir br_download`**
+**`  $ git clone https://github.com/drone-labs/buildroot`**
+**`  $ cd buildroot`**
 
 > br_download is the directory where buildroot will save the files it will download
 > during build. Using an out of tree directory make them easily available for others builds 
 
 ### 2. Select the working branch
 
-	$ git checkout 2019.02.x
+**`  $ git checkout 2019.02.x`**
 
 ### 3. Update repository
 
-	$ git fetch --prune
+**`  $ git fetch --prune`**
 
 ### 4. Configure buildroot
 
-	$ make bbblue_defconfig
+**`  $ make bbblue_defconfig`**
 
 ### 5. Review the configuration
 
-	$ make menuconfig
+**`  $ make menuconfig`**
 
 ### 6. Build the firmware
 
-	$ make
+**`  $ make`**
 
 ### 7. Take a break...
 
 ### 8. Copy the firmware to a SD card
 
-	$ sudo dd if=output/images/sdcard.img of=/dev/XXX
+**`  $ sudo dd if=output/images/sdcard.img of=/dev/XXX`**
 
 ### 9. Fire it up
 
