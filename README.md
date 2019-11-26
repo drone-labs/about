@@ -244,7 +244,7 @@ Exit ssh session and do the copies
 Relog into the board and restart the application (a **reboot** is safer)
 
 	$ ssh root@192.168.7.2
-	# /etc/init.d/S60arduplane restart
+	# /etc/init.d/S60arduplane start
 
 While logged in, take a first look at the used board resources
 
