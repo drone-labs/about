@@ -99,9 +99,9 @@ Assuming all prerequisites are met (and I have not made any mistake...) this is 
 
 ### 1. Get the sources
 
-**`  $ cd $ARDUPILOT_BLUE`**
-**`  $ mkdir br_download`**
-**`  $ git clone https://github.com/drone-labs/buildroot`**
+**`  $ cd $ARDUPILOT_BLUE`**  
+**`  $ mkdir br_download`**  
+**`  $ git clone https://github.com/drone-labs/buildroot`**  
 **`  $ cd buildroot`**
 
 > br_download is the directory where buildroot will save the files it will download
