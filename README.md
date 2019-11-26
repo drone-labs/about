@@ -109,29 +109,29 @@ Assuming all prerequisites are met (and I have not made any mistake...) this is 
 
 ### 2. Select the working branch
 
-**`  $ git checkout 2019.02.x`**
+	$ git checkout 2019.02.x
 
 ### 3. Update repository
 
-**`  $ git fetch --prune`**
+	$ git fetch --prune
 
 ### 4. Configure buildroot
 
-**`  $ make bbblue_defconfig`**
+	$ make bbblue_defconfig
 
 ### 5. Review the configuration
 
-**`  $ make menuconfig`**
+	$ make menuconfig
 
 ### 6. Build the firmware
 
-**`  $ make`**
+	$ make
 
 ### 7. Take a break...
 
 ### 8. Copy the firmware to a SD card
 
-**`  $ sudo dd if=output/images/sdcard.img of=/dev/XXX`**
+	$ sudo dd if=output/images/sdcard.img of=/dev/XXX
 
 ### 9. Fire it up
 
