@@ -229,21 +229,21 @@ When build is finished, we can find progams in build/blue/bin/ directory
 ### 9. Update the target
 
 Assuming the board is running the previously built firmware,
-copy the programs to the right target filesystem location
+copy the applications to the target filesystem correct location
 
-First, stop the program:
+First, log into the board shell and stop the application:
 
 	$ ssh root@192.168.7.2  (default password = root)
 	# /etc/init.d/S60arduplane stop
 	# exit
 
-Do the copies
+Exit the shell and do the copies
 
 	$ scp ./build/blue/bin/a* root@192.168.7.2:/usr/bin/ardupilot
 
-And restart the application
+Relog into the board and restart the application (a **reboot** is safer)
 
-	$ ssh root@192.168.7.2  (default password = root)
+	$ ssh root@192.168.7.2
 	# /etc/init.d/S60arduplane restart
 
 While logged in, take a first look at the used board resources
