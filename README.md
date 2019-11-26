@@ -146,15 +146,15 @@ will be linked against uClibc. Building a static version of ardupilot will also 
 I forked ardupilot (https://github.com/ArduPilot/ardupilot) and created a new branch named
 drone-labs.  
 My first build attempt failed due to three gcc warnings treated as errors. These were caused
-by gcc complaining about source and destination strings length mismatch upon a `snprintf()`
+by gcc complaining about source and destination strings length mismatch upon a **`snprintf()`**
 call. Giving a little more room to the destination strings did the job.
-After some investigations about the annoying "`RCOutputAioPRU.cpp:SIGBUS error generated`"
+After some investigations about the annoying "**`RCOutputAioPRU.cpp:SIGBUS error generated`**"
 error, I guessed this was caused by some device tree malformation, bypassed by three gpio
-lines export done into the code (gpio lines 5, 65 and 105 in `AP_HAL_Linux/GPIO_BBB.cpp`,
-`GPIO_BBB::init()` function). Using my provided device tree, this code section is no more
+lines export done into the code (gpio lines 5, 65 and 105 in **`AP_HAL_Linux/GPIO_BBB.cpp`**,
+**`GPIO_BBB::init()`** function). Using my provided device tree, this code section is no more
 needed and has been commented out.
 
-In `libraries/AP_HAL_Linux/HAL_Linux_Class.cpp`, I changed "`ttyO4`" to "`ttyS4`" where the
+In **`libraries/AP_HAL_Linux/HAL_Linux_Class.cpp`**, I changed "**`ttyO4`**" to "**`ttyS4`**" where the
 RC inputs drivers are instantiated (around line 140) :
 
 	static RCInput_Multi rcinDriver {
