@@ -34,10 +34,10 @@ Main software versions
 I reworked the stock linux device tree source file (**`am335x-boneblue.dts`**) to
 replace all the Beaglebone black P8 and P9 headers pins references by the
 matching Beaglebone blue ones. The same way, I changed the included common
-bone pins configuration (`am335x-bone-common-universal-pins.dtsi`) by a new
-`am335x-boneblue-pins.dtsi` file. The PRU uio interface is also supported.
+bone pins configuration (**`am335x-bone-common-universal-pins.dtsi`**) by a new
+**`am335x-boneblue-pins.dtsi`** file. The PRU uio interface is also supported.
 These changes are made upon linux kernel build through a dedicated patch :  
->`board/bbblue/patches/linux/0002-Clean-am335x-boneblue-dts-Enable-uio-pruss-bbblue.patch`
+>**`board/bbblue/patches/linux/0002-Clean-am335x-boneblue-dts-Enable-uio-pruss-bbblue.patch`**
 
 Once booted, an arduplane instance is automatically created in background,
 and can be managed the standard way :
