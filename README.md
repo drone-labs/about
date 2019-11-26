@@ -198,14 +198,14 @@ a good start point to see which packages are missing on the system...
 
 ### 7. Configuration
 
-First, update the PATH environment variable (must be ajdusted to suit configuration) :
+First, update the PATH environment variable, according to **`ARDUPILOT_BLUE`** setting:
 
 	$ export AP_DIR=$ARDUPILOT_BLUE/ardupilot/Tools/autotest  
 	$ export GCC_DIR=$ARDUPILOT_BLUE/buildroot/output/host/bin  
 	$ export PATH=$GCC_DIR:$AP_DIR:$PATH
 
 Then Configure the Ardupilot build engine (waf) to build programs for the BBBlue
-and use our toolchain
+and use buildroot toolchain:
 
 	$ ./waf configure --board=blue --toolchain=arm-linux
 
