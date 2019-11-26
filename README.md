@@ -11,7 +11,7 @@ So, why? The proposed solution relies on a Debian distribution
 (stretch-console) which provides many, many features that I do not aim to use.
 Instead, I want to have a simple, small memory footprint system while staying
 reliable, configurable, extendable and reproducible.
-For that, I use my favorite build system: Buildroot (https://buildroot.org)
+For that, I used my favorite build system: Buildroot (https://buildroot.org)
 
 ## Overview
 In my buildroot fork, I added basic support for the board:
@@ -202,12 +202,13 @@ First, update the PATH environment variable (must be ajdusted to suit configurat
 	$ AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest  
 	$ GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
 	$ export PATH=$GCC_DIR:$AP_DIR:$PATH  
- 
-### 8. Configure the Ardupilot build engine (waf) to build programs for the BBBlue and use our toolchain
+
+Then Configure the Ardupilot build engine (waf) to build programs for the BBBlue
+and use our toolchain
 
 	$ ./waf configure --board=blue --toolchain=arm-linux
 
-### 9. Build the programs
+### 8. Build the programs
 
 	$ ./waf
  
@@ -224,7 +225,7 @@ When build is finished, we can find progams in build/blue/bin/ directory
 	bin/arduplane        1809853  1640  47884  1859377  
 	bin/ardusub          1562833  1664  44036  1608533  
 
-### 10. Update the target
+### 9. Update the target
 
 Assuming the board is running the previously built firmware,
 copy the programs to the right target filesystem location:
