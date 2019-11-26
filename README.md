@@ -95,7 +95,8 @@ directory, eg:
 
 ## Build the firmware
 
-Assuming all prerequisites are met (and I have not made any mistake...) this is straightforward
+Assuming all prerequisites are met (and I have not made any mistake...) this is straightforward.
+Take a look at buildroot documentation available online; Part 1, chapter 2: System requirements
 
 ### 1. Get the sources
 
