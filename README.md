@@ -170,8 +170,8 @@ over the given serial port (here /dev/ttyS4).
 
 ### 1. Get the sources
 
-	$ cd Ardupilot-blue
-	$ https://github.com/drone-labs/ardupilot
+	$ cd $ARDUPILOT_BLUE
+	$ git clone https://github.com/drone-labs/ardupilot
 	$ cd ardupilot
     
 ### 2.  Install the prerequisites
