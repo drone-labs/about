@@ -42,7 +42,7 @@ These changes are made upon linux kernel build through a dedicated patch :
 Once booted, an arduplane instance is automatically created in background,
 and can be managed the standard way :
 
-	**`/etc/init.d/S60arduplane.sh start|stop|restart`**
+		**`/etc/init.d/S60arduplane.sh start|stop|restart`**
 
   Default options for the program are
 
