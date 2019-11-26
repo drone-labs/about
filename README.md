@@ -163,9 +163,9 @@ RC inputs drivers are instantiated (around line 140) :
 	   new RCInput_RCProtocol(NULL, "/dev/ttyS4")
 	};
 
-From what I understand, two driver classes are instantiated; the first, `RCInput_AioPRU`
-is "attached" to the `PRU_E_B` signal (E4 pin4). The second, `RCInput_RCProtocol(NULL, "/dev/ttyS4")`
-is "attached" to the `UART4_RX` signal (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
+From what I understand, two driver classes are instantiated; the first, **`RCInput_AioPRU`**
+is "attached" to the **`PRU_E_B`** signal (E4 pin4). The second, **`RCInput_RCProtocol(NULL, "/dev/ttyS4")`**
+is "attached" to the **`UART4_RX`** signal (DSM2 pin3). It can handle Sbus (here NULL) or dsm protocol
 over the given serial port (here /dev/ttyS4).
 
 ### 1. Get the sources
@@ -200,9 +200,9 @@ a good start point to see which packages are missing on the system...
 
 First, update the PATH environment variable (must be ajdusted to suit configuration) :
 
-	$ AP_DIR=Ardupilot-Blue/ardupilot/Tools/autotest  
-	$ GCC_DIR=Ardupilot-Blue/buildroot/output/host/bin  
-	$ export PATH=$GCC_DIR:$AP_DIR:$PATH  
+	$ export AP_DIR=$ARDUPILOT_BLUE/ardupilot/Tools/autotest  
+	$ export GCC_DIR=$ARDUPILOT_BLUE/buildroot/output/host/bin  
+	$ export PATH=$GCC_DIR:$AP_DIR:$PATH
 
 Then Configure the Ardupilot build engine (waf) to build programs for the BBBlue
 and use our toolchain
@@ -289,6 +289,7 @@ add QGroundControl tips
 Configure wifi  
 Build ardupilot examples  
 plug in the Sbus RC receiver signal to E4 Header  
+How to control GPIOs  
 
 
 
