@@ -205,7 +205,7 @@ First, update the PATH environment variable, according to **`ARDUPILOT_BLUE`** s
 	$ export PATH=$GCC_DIR:$AP_DIR:$PATH
 
 Then Configure the Ardupilot build engine (waf) to build programs for the BBBlue
-and use buildroot toolchain:
+and use the buildroot toolchain:
 
 	$ ./waf configure --board=blue --toolchain=arm-linux
 
@@ -229,7 +229,15 @@ When build is finished, we can find progams in build/blue/bin/ directory
 ### 9. Update the target
 
 Assuming the board is running the previously built firmware,
-copy the programs to the right target filesystem location:
+copy the programs to the right target filesystem location
+
+First, stop the program:
+
+	$ ssh root@192.168.7.2  (default password = root)
+	# /etc/init.d/S60arduplane stop
+	# exit
+
+Do the copies
 
 	$ scp ./build/blue/bin/a* root@192.168.7.2:/usr/bin/ardupilot
 
