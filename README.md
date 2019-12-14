@@ -291,6 +291,21 @@ Finally close the ssh session
 	# exit
 
 
+## Ground Station
+I use QGroundstation-3.4.4 (newer versions fail because of my outdated Linux
+Mint version...). My RC Radio transmitter is a Radiolink AT10. The Radio Receiver
+(Radiolink R12DS) SBus Signal is connected straight to pin4 of E4 Header (PRU_E_B).
+
+### 1. Discrete Outputs
+
+
+
+
+
+
+
+
+
 ## ToDo
 Run from onboard flash  
 add QGroundControl tips  
