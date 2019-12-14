@@ -330,21 +330,23 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 For this test, I use the GPIOs available on **GP0** Header. On the Transmitter,
 4 channels are bound to 4 switches :
 
-	Channel   Switch
-	   7        A
-	   8        B
-	   9        E
-	  10        F 
+	Switch  Channel
+	===============
+	   A       7
+	   B       8
+	   E       9
+	   F      10
 
 From QGroundControl Parameters window, the selected RC channel are bound to
 relay Output functions :
 
-	SW    Parameter     Value   Function
-	==========================================
-	 A    RC7_OPTION     28     Relay  ON/OFF
-	 B    RC8_OPTION     34     Relay2 ON/OFF
-	 E    RC9_OPTION     35     Relay3 ON/OFF
-	 F    RC10_OPTION    26     Relay4 ON/OFF
+	  Transmitter    |          QGroundControl
+	Switch  Channel  |  Parameter     Value    Function
+	=================|=====================================
+	  A        7     |  RC7_OPTION     28     Relay1 ON/OFF
+	  B        8     |  RC8_OPTION     34     Relay2 ON/OFF
+	  E        9     |  RC9_OPTION     35     Relay3 ON/OFF
+	  F       10     |  RC10_OPTION    36     Relay4 ON/OFF
 
 ## ToDo
 Run from onboard flash  
