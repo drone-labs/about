@@ -293,8 +293,13 @@ Finally close the ssh session
 
 ## Ground Station
 I use QGroundstation-3.4.4 (newer versions fail because of my outdated Linux
-Mint version...). My RC Radio transmitter is a Radiolink AT10. The Radio Receiver
-(Radiolink R12DS) SBus Signal is connected straight to pin4 of E4 Header (PRU_E_B).
+Mint version...). My RC Radio transmitter is a **Radiolink AT10**.
+The **Radiolink R12DS** Receiver SBus Signal is connected straight to pin4
+of E4 Header (PRU_E_B).
+
+### 1. Discrete Outputs
+The goal is to control some board GPIO outputs from the transmitter 2 positions
+switches.
 
 On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and GP1 
 
@@ -302,7 +307,7 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 
 	                ZCZ     GPIO       GPIO
 	Pin Signal      Pin     Id.        Num.     BBblack
-	===================================================
+	====================================================
 	 1  GND
 	 2  3.3V
 	 3  GPIO1_25    U16    GPIO1_25     57      N/A
@@ -314,7 +319,7 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 
 	                ZCZ     GPIO       GPIO
 	Pin Signal      Pin     Id.        Num.     BBblack
-	===================================================
+	====================================================
 	 1  GND
 	 2  3.3V
 	 3  GPIO3_2     J15    GPIO3_2      98      N/A
@@ -322,13 +327,24 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 	 5  LED_RED     R7     GPIO2_2      66      P8_07
 	 6  LED_GRN     T7     GPIO2_3      67      P8_08
 
+For this test, I use the GPIOs available on **GP0** Header. On the Transmitter,
+4 channels are bound to 4 switches :
 
+	Channel   Switch
+	   7        A
+	   8        B
+	   9        E
+	  10        F 
 
+From QGroundControl Parameters window, the selected RC channel are bound to
+relay Output functions :
 
-### 1. Discrete Outputs
-The goal is to control some board GPIO outputs from the transmitter 2 positions
-switches.
-
+	SW    Parameter     Value   Function
+	==========================================
+	 A    RC7_OPTION     28     Relay  ON/OFF
+	 B    RC8_OPTION     34     Relay2 ON/OFF
+	 E    RC9_OPTION     35     Relay3 ON/OFF
+	 F    RC10_OPTION    26     Relay4 ON/OFF
 
 ## ToDo
 Run from onboard flash  
