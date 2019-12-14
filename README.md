@@ -300,25 +300,25 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 
 **GP0**
 
-	GP0             ZCZ     GPIO       GPIO
-	Pin Signal      Pin     Id.        Number  BBblack
-	1  GND
-	2  3.3V
-	3  GPIO1_25    U16    GPIO1_25      57     N/A
-	4  GPIO1_17    V14    GPIO1_17      33     P9_23
-	5  GPIO3_20    D13    GPIO3_20     116     P9_91 ?
-	6  GPIO3_17    C12    GPIO3_17     113     P9_28
+	                ZCZ    GPIO        GPIO
+	Pin Signal      Pin    Id.         Num.     BBblack
+	 1  GND
+	 2  3.3V
+	 3  GPIO1_25    U16    GPIO1_25     57      N/A
+	 4  GPIO1_17    V14    GPIO1_17     33      P9_23
+	 5  GPIO3_20    D13    GPIO3_20    116      P9_91
+	 6  GPIO3_17    C12    GPIO3_17    113      P9_28
 
 **GP1**
 
-	GP1             ZCZ     GPIO       GPIO
-	Pin Signal      Pin     Id.        Number  BBblack
+	                ZCZ    GPIO        GPIO
+	Pin Signal      Pin    Id.         Num.     BBblack
 	 1  GND
 	 2  3.3V
-	 3  GPIO3_2     J15    GPIO3_2       98     N/A
-	 4  GPIO3_1     H17    GPIO3_1       97     N/A
-	 5  LED_RED     R7     GPIO2_2       66     P8_07
-	 6  LED_GRN     T7     GPIO2_3       67     P8_08
+	 3  GPIO3_2     J15    GPIO3_2      98      N/A
+	 4  GPIO3_1     H17    GPIO3_1      97      N/A
+	 5  LED_RED     R7     GPIO2_2      66      P8_07
+	 6  LED_GRN     T7     GPIO2_3      67      P8_08
 
 
 
