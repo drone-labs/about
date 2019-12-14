@@ -297,12 +297,26 @@ Mint version...). My RC Radio transmitter is a Radiolink AT10. The Radio Receive
 (Radiolink R12DS) SBus Signal is connected straight to pin4 of E4 Header (PRU_E_B).
 
 ### 1. Discrete Outputs
+The goal is to control some board GPIO outputs from the transmitter 2 positions
+switches.
 
+On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and GP1 
 
+	GP0
+	1  GND
+	2  3.3V
+	3  GPIO1_25           U16              GPIO1_25      57     ?
+	4  GPIO1_17           V14              GPIO1_17      33     P9_23
+	5  GPIO3_20           D13              GPIO3_20     116     P9_91 ?
+	6  GPIO3_17           C12              GPIO3_17     113     P9_28
 
-
-
-
+	GP1
+	1  GND
+	2  3.3V
+	3  GPIO3_2            J15              GPIO3_2       98     ?
+	4  GPIO3_1            H17              GPIO3_1       97     ?
+	5  LED_RED            R7               GPIO2_2       66     P8_07
+	6  LED_GRN            T7               GPIO2_3       67     P8_08
 
 
 
