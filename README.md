@@ -299,9 +299,9 @@ Mint version...). My RC Radio transmitter is a Radiolink AT10. The Radio Receive
 On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and GP1 
 
 **GP0**
-
-	                ZCZ    GPIO        GPIO
-	Pin Signal      Pin    Id.         Num.     BBblack
+	                ZCZ     GPIO       GPIO
+	Pin Signal      Pin     Id.        Num.     BBblack
+	===================================================
 	 1  GND
 	 2  3.3V
 	 3  GPIO1_25    U16    GPIO1_25     57      N/A
@@ -310,9 +310,9 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 	 6  GPIO3_17    C12    GPIO3_17    113      P9_28
 
 **GP1**
-
-	                ZCZ    GPIO        GPIO
-	Pin Signal      Pin    Id.         Num.     BBblack
+	                ZCZ     GPIO       GPIO
+	Pin Signal      Pin     Id.        Num.     BBblack
+	===================================================
 	 1  GND
 	 2  3.3V
 	 3  GPIO3_2     J15    GPIO3_2      98      N/A
