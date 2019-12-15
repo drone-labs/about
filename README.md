@@ -298,7 +298,7 @@ The **Radiolink R12DS** Receiver SBus Signal is connected straight to pin4
 of E4 Header (PRU_E_B).
 
 ### 1. Discrete Outputs
-The goal is to control some board GPIO outputs from the transmitter 2 positions
+The goal is to control some GPIO outputs from the transmitter 2 positions
 switches.
 
 On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and GP1 
@@ -337,16 +337,29 @@ For this test, I use the GPIOs available on **GP0** Header. On the Transmitter,
 	   E       9
 	   F      10
 
-From QGroundControl Parameters window, the selected RC channel are bound to
-relay Output functions :
+From QGroundControl Parameters window, the selected RC channels are bound to
+Ardupilot Relay Output Functions :
 
-	  Transmitter    |          QGroundControl
-	Switch  Channel  |  Parameter     Value    Function
-	=================|=====================================
+	  Transmitter    |           QGroundControl
+	Switch  Channel  |  Parameter     Value     Function
+	=================|======================================
 	  A        7     |  RC7_OPTION     28     Relay1 ON/OFF
 	  B        8     |  RC8_OPTION     34     Relay2 ON/OFF
 	  E        9     |  RC9_OPTION     35     Relay3 ON/OFF
 	  F       10     |  RC10_OPTION    36     Relay4 ON/OFF
+
+Finaly, from the same window, the Relay Output Pins are bound to
+the GP0 Header Pins :
+
+	Parameter     Value    Caption
+	======================================================
+	RELAY_PIN       57     BB Blue GP0 pin3
+	RELAY_PIN2      49     BB Blue GP0 pin4
+	RELAY_PIN3     116     PX4IO ACC2/BB Blue GP0 pin5
+	RELAY_PIN4     113     PX4IO Relay1/BB Blue GP0 pin6
+	RELAY_PIN5      -1     Disabled
+	RELAY_PIN6      -1     Disabled
+
 
 ## ToDo
 Run from onboard flash  
