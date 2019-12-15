@@ -362,7 +362,7 @@ the **GP0 Header Pins** :
 	RELAY_PIN6      -1     Disabled
 
 
-### 1. Discrete Inputs
+### 2. Discrete Inputs
 The goal is to send some GPIO inputs status to the Ground Station.
 This can be done with the help of the **AP_BUTTON** library.
 The GPIOs mentionned above (**GP0** and **GP1**) can be used, or
@@ -392,8 +392,10 @@ is caught) is set to 5 :
 	BTN_REPORT_SEND     5       Number of time the Message
 	                            is to be sent
 
-
-
+For now, the **BUTTON_CHANGE** message is well received by the Ground
+Station but can only be observed in the **MAVLink Inspector** Window.
+Still investigating on how to make it more friendly in the GUI (Custom
+Command, Plugin ?).
 
 
 ## ToDo
@@ -402,7 +404,7 @@ add QGroundControl tips
 Configure wifi  
 Build ardupilot examples  
 plug in the Sbus RC receiver signal to E4 Header  
-How to control GPIOs  
+Enable MAVLink2  
 
 
 
