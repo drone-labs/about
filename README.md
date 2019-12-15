@@ -408,13 +408,13 @@ port, defined through the **-A** argument of Arduplane command line).
 no MAVLink2 message was sent on this channel...
 Digging a little bit in the source code, I found the reason in
 **`GCS_MAVLink/GCS_Common.cpp`** :
-`    if (mavlink_protocol == AP_SerialManager::SerialProtocol_MAVLink2) {`
-`    load_signing_key();`
-`    if (status->signing == nullptr) {`
-`      // if signing is off start by sending MAVLink1`
-`      status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;`
-`    }`
-`...`
+`    if (mavlink_protocol == AP_SerialManager::SerialProtocol_MAVLink2) {  
+    load_signing_key();  
+    if (status->signing == nullptr) {  
+      // if signing is off start by sending MAVLink1  
+      status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;__
+    }  
+...`
 
 
 
