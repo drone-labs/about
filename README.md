@@ -407,16 +407,22 @@ port, defined through the **-A** argument of Arduplane command line).
 >My first attempts showed that despite a correct SERIAL0_PROTOCOL value,
 no MAVLink2 message was sent on this channel...
 Digging a little bit in the source code, I found the reason in
-**`GCS_MAVLink/GCS_Common.cpp`** :\
+**`GCS_MAVLink/GCS_Common.cpp`** init() function :\
+`    ...`\
 `    if (mavlink_protocol == AP_SerialManager::SerialProtocol_MAVLink2) {`\
 `    load_signing_key();`\
 `    if (status->signing == nullptr) {`\
 `      // if signing is off start by sending MAVLink1`\
 `      status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;`\
 `    }`\
-`...`
-
-
+`    ...`\
+`  // Always start with MAVLink2 on first port`\
+`  if (chan == MAVLINK_COMM_0) {`\
+`    printf("GCS_MAVLINK::init() : MAVLINK_COMM_0 Forced to MAVLink2\n");`\
+`    // Always start with MAVLink2 on first port`\
+`    status->flags &= ~(MAVLINK_STATUS_FLAG_OUT_MAVLINK1);`\
+`  }`\
+`  ...`\
 
 
 
