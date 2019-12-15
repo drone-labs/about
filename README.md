@@ -421,14 +421,16 @@ Digging a little bit in the source code, I found the reason in
 `    // Always start with MAVLink1 on first port`\
 `    status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;`\
 `  }`\
-`  ...`\\
+`  ...`\
+\
 Thus, if the serial protocol is set to MAVLink2 and signing is disabled, the
 AP falls back to MAVLink1, and whatever the SERIAL0_PROTOCOL setting, the
 protocol is forced to MAVLink1...
 Working with the first port, I just changed the line :\
 `    status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;`\
 by\
-`    status->flags &= ~(MAVLINK_STATUS_FLAG_OUT_MAVLINK1);`\\
+`    status->flags &= ~(MAVLINK_STATUS_FLAG_OUT_MAVLINK1);`\
+\
 in the second test.
 
 
