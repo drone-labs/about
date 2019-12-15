@@ -298,34 +298,35 @@ The **Radiolink R12DS** Receiver SBus Signal is connected straight to pin4
 of E4 Header (PRU_E_B).
 
 ### 1. Discrete Outputs
-The goal is to control some GPIO outputs from the transmitter 2 positions
-switches.
+The goal is to control some GPIO outputs available on the BeagleBone
+Blue from an equal number of **2 positions switches** of the transmitter.
+This can be done with the help of the **AP_RELAY** library.
+On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available :
+**GP0** and **GP1**
 
-On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and GP1 
+**GP0 Header**
 
-**GP0**
+	                  ZCZ     GPIO       GPIO
+	Pin   Signal      Pin     Id.        Num.     BBblack
+	======================================================
+	 1    GND
+	 2    3.3V
+	 3    GPIO1_25    U16    GPIO1_25     57      N/A
+	 4    GPIO1_17    V14    GPIO1_17     33      P9_23
+	 5    GPIO3_20    D13    GPIO3_20    116      P9_91
+	 6    GPIO3_17    C12    GPIO3_17    113      P9_28
 
-	                ZCZ     GPIO       GPIO
-	Pin Signal      Pin     Id.        Num.     BBblack
-	====================================================
-	 1  GND
-	 2  3.3V
-	 3  GPIO1_25    U16    GPIO1_25     57      N/A
-	 4  GPIO1_17    V14    GPIO1_17     33      P9_23
-	 5  GPIO3_20    D13    GPIO3_20    116      P9_91
-	 6  GPIO3_17    C12    GPIO3_17    113      P9_28
+**GP1 Header**
 
-**GP1**
-
-	                ZCZ     GPIO       GPIO
-	Pin Signal      Pin     Id.        Num.     BBblack
-	====================================================
-	 1  GND
-	 2  3.3V
-	 3  GPIO3_2     J15    GPIO3_2      98      N/A
-	 4  GPIO3_1     H17    GPIO3_1      97      N/A
-	 5  LED_RED     R7     GPIO2_2      66      P8_07
-	 6  LED_GRN     T7     GPIO2_3      67      P8_08
+	                  ZCZ     GPIO       GPIO
+	Pin   Signal      Pin     Id.        Num.     BBblack
+	======================================================
+	 1    GND
+	 2    3.3V
+	 3    GPIO3_2     J15    GPIO3_2      98      N/A
+	 4    GPIO3_1     H17    GPIO3_1      97      N/A
+	 5    LED_RED     R7     GPIO2_2      66      P8_07
+	 6    LED_GRN     T7     GPIO2_3      67      P8_08
 
 For this test, I use the GPIOs available on **GP0** Header. On the Transmitter,
 4 channels are bound to **4 switches** :
@@ -359,6 +360,40 @@ the **GP0 Header Pins** :
 	RELAY_PIN4     113     PX4IO Relay1/BB Blue GP0 pin6
 	RELAY_PIN5      -1     Disabled
 	RELAY_PIN6      -1     Disabled
+
+
+### 1. Discrete Inputs
+The goal is to send some GPIO inputs status to the Ground Station.
+This can be done with the help of the **AP_BUTTON** library.
+The GPIOs mentionned above (**GP0** and **GP1**) can be used, or
+any other GPIO available on the board. For the this test I use
+2 inputs, the first connected to the **MODE** Button and the second
+connected to the **PAUSE** Button.
+
+	           ZCZ     GPIO       GPIO
+	Button     Pin     Id.        Num.     BBblack
+	===============================================
+	MODE       U6     GPIO2_4      68      P8_10
+	PAUSE      T6     GPIO2_5      69      P8_09
+
+From QGroundControl Parameters window, **Button Change Event**
+reporting is enabled, the selected **GPIOs** pins are bound
+to **BTN_PIN1** and **BTN_PIN2** and the number of MAVLink
+**BUTTON_CHANGE** Messages to send (each time such an event
+is caught) is set to 5 :
+
+	Parameter         Value     Function
+	====================================================
+	BTN_ENABLE          1       Enable Button Reporting
+	BTN_PIN1           68       Button1 GPIO pin
+	BTN_PIN2           69       Button2 GPIO pin
+	BTN_PIN3           -1       Disable Button3 input
+	BTN_PIN4           -1       Disable Button4 input
+	BTN_REPORT_SEND     5       Number of time the Message
+	                            is to be sent
+
+
+
 
 
 ## ToDo
