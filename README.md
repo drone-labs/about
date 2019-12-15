@@ -303,8 +303,7 @@ switches.
 
 On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and GP1 
 
-**GP0**
-
+**`GP0`**
 	                ZCZ     GPIO       GPIO
 	Pin Signal      Pin     Id.        Num.     BBblack
 	====================================================
@@ -315,8 +314,7 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 	 5  GPIO3_20    D13    GPIO3_20    116      P9_91
 	 6  GPIO3_17    C12    GPIO3_17    113      P9_28
 
-**GP1**
-
+	**`GP1`**
 	                ZCZ     GPIO       GPIO
 	Pin Signal      Pin     Id.        Num.     BBblack
 	====================================================
@@ -328,7 +326,7 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 	 6  LED_GRN     T7     GPIO2_3      67      P8_08
 
 For this test, I use the GPIOs available on **GP0** Header. On the Transmitter,
-4 channels are bound to 4 switches :
+4 channels are bound to **4 switches** :
 
 	Switch  Channel
 	===============
@@ -337,8 +335,8 @@ For this test, I use the GPIOs available on **GP0** Header. On the Transmitter,
 	   E       9
 	   F      10
 
-From QGroundControl Parameters window, the selected RC channels are bound to
-Ardupilot Relay Output Functions :
+From QGroundControl Parameters window, the selected **RC channels** are bound to
+Ardupilot **Relay Output Functions** :
 
 	  Transmitter    |           QGroundControl
 	Switch  Channel  |  Parameter     Value     Function
@@ -348,8 +346,8 @@ Ardupilot Relay Output Functions :
 	  E        9     |  RC9_OPTION     35     Relay3 ON/OFF
 	  F       10     |  RC10_OPTION    36     Relay4 ON/OFF
 
-Finaly, from the same window, the Relay Output Pins are bound to
-the GP0 Header Pins :
+Finaly, from the same window, the **Relay Output Pins** are bound to
+the **GP0 Header Pins** :
 
 	Parameter     Value    Caption
 	======================================================
