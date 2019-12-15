@@ -366,9 +366,9 @@ the **GP0 Header Pins** :
 The goal is to send some GPIO inputs status to the Ground Station.
 This can be done with the help of the **AP_BUTTON** library.
 The GPIOs mentionned above (**GP0** and **GP1**) can be used, or
-any other GPIO available on the board. For the this test I use
-2 inputs, the first connected to the **MODE** Button and the second
-connected to the **PAUSE** Button.
+any other GPIO available on the board. For this test I use 2 inputs,
+the first connected to the **MODE** Button and the second connected
+to the **PAUSE** Button.
 
 	           ZCZ     GPIO       GPIO
 	Button     Pin     Id.        Num.     BBblack
@@ -397,6 +397,12 @@ Station but can only be observed in the **MAVLink Inspector** Window.
 Still investigating on how to make it more friendly in the GUI (Custom
 Command, Plugin ?).
 
+**NOTE**
+
+>The **BUTTON_CHANGE** Message is MAVLink2 (Id=257); therefore the Serial
+port used to communicate with the Ground Station must be configured to use
+this Protocol Version (eg. SERIAL0_PROTOCOL = MAVLink2 for the first Serial
+port, defined through the **-A** argument of Arduplane command line.
 
 ## ToDo
 Run from onboard flash  
