@@ -304,6 +304,7 @@ switches.
 On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and GP1 
 
 **GP0**
+
 	                ZCZ     GPIO       GPIO
 	Pin Signal      Pin     Id.        Num.     BBblack
 	====================================================
@@ -315,6 +316,7 @@ On the BeagleBone Blue, 2 GPIO Headers (6 pins JST-SH) are available : GP0 and G
 	 6  GPIO3_17    C12    GPIO3_17    113      P9_28
 
 **GP1**
+
 	                ZCZ     GPIO       GPIO
 	Pin Signal      Pin     Id.        Num.     BBblack
 	====================================================
