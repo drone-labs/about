@@ -397,12 +397,22 @@ Station but can only be observed in the **MAVLink Inspector** Window.
 Still investigating on how to make it more friendly in the GUI (Custom
 Command, Plugin ?).
 
-**NOTE**
+**NOTES**
 
 >The **BUTTON_CHANGE** Message is MAVLink2 (Id=257); therefore the Serial
 port used to communicate with the Ground Station must be configured to use
 this Protocol Version (eg. SERIAL0_PROTOCOL = MAVLink2 for the first Serial
-port, defined through the **-A** argument of Arduplane command line.
+port, defined through the **-A** argument of Arduplane command line).
+
+>My first attempts showed that despite a correct SERIAL0_PROTOCOL value,
+no MAVLink2 message was sent on this channel...
+Digging a little bit in the source code, I found the reason in **`GCS_Common.cpp`**
+found in the **`GCS_MAVLink`** library :
+
+
+
+
+
 
 ## ToDo
 Run from onboard flash  
