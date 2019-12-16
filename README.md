@@ -290,6 +290,44 @@ Finally close the ssh session
 
 	# exit
 
+### 10. Extras
+#### Enable MAVLink2
+In order to enable MAVLink2 on a particular serial port, the manual says
+to set the corresponding **SERIALN_PROTOCOL** parameter to **MAVLink2**,
+with **N** the port number (0 to 7). After this parameter is changed,
+Arduplane must be restarted.
+My first attempts showed that despite a correct SERIAL0_PROTOCOL value,
+no MAVLink2 message was sent on this channel...
+Digging a little bit in the source code, I found the reason in
+**`GCS_MAVLink/GCS_Common.cpp init()`** function :\
+
+```
+  ...
+  if (mavlink_protocol == AP_SerialManager::SerialProtocol_MAVLink2) {
+    load_signing_key();
+    if (status->signing == nullptr) {
+      // if signing is off start by sending MAVLink1
+      status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;
+    }
+    ...
+    
+   // Always start with MAVLink1 on first port
+   if (chan == MAVLINK_COMM_0) {
+     // Always start with MAVLink1 on first port
+     status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;
+   }
+   ...
+```
+
+Thus, if the serial protocol is set to MAVLink2 and signing is disabled, the
+AP falls back to MAVLink1, and whatever the SERIAL0_PROTOCOL setting, the
+protocol is forced to MAVLink1...
+Working with the first port, I just changed the line :\
+`    status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;`\
+by\
+`    status->flags &= ~(MAVLINK_STATUS_FLAG_OUT_MAVLINK1);`\
+\
+in the second test.
 
 ## Ground Station
 I use QGroundstation-3.4.4 (newer versions fail because of my outdated Linux
@@ -403,36 +441,6 @@ Command, Plugin ?).
 port used to communicate with the Ground Station must be configured to use
 this Protocol Version (eg. SERIAL0_PROTOCOL = MAVLink2 for the first Serial
 port, defined through the **-A** argument of Arduplane command line).
-
->My first attempts showed that despite a correct SERIAL0_PROTOCOL value,
-no MAVLink2 message was sent on this channel...
-Digging a little bit in the source code, I found the reason in
-**`GCS_MAVLink/GCS_Common.cpp`** init() function :\
-`    ...`\
-`    if (mavlink_protocol == AP_SerialManager::SerialProtocol_MAVLink2) {`\
-`    load_signing_key();`\
-`    if (status->signing == nullptr) {`\
-`      // if signing is off start by sending MAVLink1`\
-`      status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;`\
-`    }`\
-`    ...`\
-`  // Always start with MAVLink1 on first port`\
-`  if (chan == MAVLINK_COMM_0) {`\
-`    // Always start with MAVLink1 on first port`\
-`    status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;`\
-`  }`\
-`  ...`\
-\
-Thus, if the serial protocol is set to MAVLink2 and signing is disabled, the
-AP falls back to MAVLink1, and whatever the SERIAL0_PROTOCOL setting, the
-protocol is forced to MAVLink1...
-Working with the first port, I just changed the line :\
-`    status->flags |= MAVLINK_STATUS_FLAG_OUT_MAVLINK1;`\
-by\
-`    status->flags &= ~(MAVLINK_STATUS_FLAG_OUT_MAVLINK1);`\
-\
-in the second test.
-
 
 
 ## ToDo
