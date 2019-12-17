@@ -153,7 +153,7 @@ to enable it, 2 files need to be mofified :
     auto lo
     iface lo inet loopback
 
-    # WiFi w/ onboard device (dynamic IP).
+    # WiFi onboard device (dynamic IP)
     auto wlan0
     iface wlan0 inet dhcp
     #iface wlan0 inet static
