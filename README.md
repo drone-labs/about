@@ -140,12 +140,10 @@ Take a look at buildroot documentation available online; Part 1, chapter 2: Syst
 #### 10.1 Wifi
 As stated above, wifi is not active by default (used for debug). In order
 to enable it, 2 files need to be mofified :
+  **`  /etc/network/interfaces`**
+  **`  /etc/wpa_supplicant.conf`**
 
-```
-    **/etc/network/interfaces**
-    **/etc/wpa_supplicant.conf**
 
-```
 **/etc/network/interfaces** (here, dynamic ip)
 
 ```
