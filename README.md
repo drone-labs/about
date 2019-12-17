@@ -141,7 +141,7 @@ Take a look at buildroot documentation available online; Part 1, chapter 2: Syst
 As stated above, wifi is not active by default (used for debug). In order
 to enable it, 2 files need to be mofified :
 
-##### /etc/network/interfaces
+**/etc/network/interfaces**
 
 ```
   # The loopback network interface.
@@ -169,7 +169,7 @@ to enable it, 2 files need to be mofified :
   post-up /usr/sbin/udhcpd
 
 ```
-##### /etc/wpa_supplicant.conf
+**/etc/wpa_supplicant.conf**
 
 ```
   ctrl_interface=/var/run/wpa_supplicant
@@ -183,7 +183,7 @@ to enable it, 2 files need to be mofified :
   }
 ```
 
-After a reboot, wifi should now be active, but it is not the case!
+After a reboot, wifi should now be active, **but it is not the case!**
 I still don't know why, but in a ssh session, a manual start works :
 (nice reader lost here, will you please help me?)
 
@@ -555,10 +555,9 @@ port, defined through the **-A** argument of Arduplane command line).
 ## ToDo
 Run from onboard flash  
 add QGroundControl tips  
-Configure wifi  
 Build ardupilot examples  
 plug in the Sbus RC receiver signal to E4 Header  
-Enable MAVLink2  
+
 
 
 
