@@ -148,6 +148,7 @@ to enable it, 2 files need to be mofified :
 ```
 **/etc/network/interfaces** (here, dynamic ip)
 
+>
 ```
     # The loopback network interface.
     auto lo
@@ -175,6 +176,7 @@ to enable it, 2 files need to be mofified :
 
 ```
 **/etc/wpa_supplicant.conf**
+>
 
 ```
     ctrl_interface=/var/run/wpa_supplicant
