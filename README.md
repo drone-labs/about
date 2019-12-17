@@ -148,45 +148,43 @@ to enable it, 2 files need to be mofified :
 ```
 **/etc/network/interfaces** (here, dynamic ip)
 
->
 ```
-    # The loopback network interface.
-    auto lo
-    iface lo inet loopback
+  # The loopback network interface.
+  auto lo
+  iface lo inet loopback
 
-    # WiFi onboard device (dynamic IP)
-    auto wlan0
-    iface wlan0 inet dhcp
-    #iface wlan0 inet static
-    #address 192.168.1.28
-    #netmask 255.255.255.0
-    #gateway 192.168.1.254
-    #dns-nameservers 8.8.8.8 1.1.1.1
-    pre-up modprobe wl18xx
-    pre-up modprobe wlcore_sdio
-    pre-up wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -B
+  # WiFi onboard device (dynamic IP)
+  auto wlan0
+  iface wlan0 inet dhcp
+  #iface wlan0 inet static
+  #address 192.168.1.28
+  #netmask 255.255.255.0
+  #gateway 192.168.1.254
+  #dns-nameservers 8.8.8.8 1.1.1.1
+  pre-up modprobe wl18xx
+  pre-up modprobe wlcore_sdio
+  pre-up wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -B
 
-    # Ethernet/RNDIS gadget (u_ether)
-    iface usb0 inet static
-    address 192.168.7.2
-    netmask 255.255.255.0
-    network 192.168.7.0
-    gateway 192.168.7.1
-    post-up /usr/sbin/udhcpd
+  # Ethernet/RNDIS gadget (u_ether)
+  iface usb0 inet static
+  address 192.168.7.2
+  netmask 255.255.255.0
+  network 192.168.7.0
+  gateway 192.168.7.1
+  post-up /usr/sbin/udhcpd
 
 ```
 **/etc/wpa_supplicant.conf**
->
 
 ```
-    ctrl_interface=/var/run/wpa_supplicant
-    update_config=1
-    ap_scan=1
-    fast_reauth=0
-    network={
-      ssid="<Access_Point_SSID>"
-      psk="<Password>"
-    }
+  ctrl_interface=/var/run/wpa_supplicant
+  update_config=1
+  ap_scan=1
+  fast_reauth=0
+  network={
+    ssid="<Access_Point_SSID>"
+    psk="<Password>"
+  }
 ```
 
 After a reboot, wifi should now be active, but it is not the case!
@@ -195,19 +193,19 @@ I still don't know why, but in a ssh session, a manual start works :
 
 
 ```
-    # /etc/init.d/S60arduplane stop
-    Stopping arduplane: OK
-    # ifup wlan0
-      Successfully initialized wpa_supplicant
-      udhcpc: started, v1.29.3
-      udhcpc: sending discover
-      udhcpc: sending discover
-      udhcpc: sending discover
-      udhcpc: sending select for 192.168.1.28
-      udhcpc: lease of 192.168.1.28 obtained, lease time 43200
-      deleting routers
-      adding dns 192.168.1.254
-    # /etc/init.d/S60arduplane start
+  # /etc/init.d/S60arduplane stop
+  Stopping arduplane: OK
+  # ifup wlan0
+    Successfully initialized wpa_supplicant
+    udhcpc: started, v1.29.3
+    udhcpc: sending discover
+    udhcpc: sending discover
+    udhcpc: sending discover
+    udhcpc: sending select for 192.168.1.28
+    udhcpc: lease of 192.168.1.28 obtained, lease time 43200
+    deleting routers
+    adding dns 192.168.1.254
+  # /etc/init.d/S60arduplane start
 ```
 
 
