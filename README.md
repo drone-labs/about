@@ -142,12 +142,11 @@ As stated above, wifi is not active by default (used for debug). In order
 to enable it, 2 files need to be mofified :
 
 ```
-    /etc/network/interfaces
-    /etc/wpa_supplicant.conf
+    **/etc/network/interfaces**
+    **/etc/wpa_supplicant.conf**
 
 ```
-
-/etc/network/interfaces
+**/etc/network/interfaces** (here, dynamic ip)
 
 ```
     # The loopback network interface.
@@ -175,8 +174,7 @@ to enable it, 2 files need to be mofified :
     post-up /usr/sbin/udhcpd
 
 ```
-
-/etc/wpa_supplicant.conf
+**/etc/wpa_supplicant.conf**
 
 ```
     ctrl_interface=/var/run/wpa_supplicant
