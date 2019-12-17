@@ -141,7 +141,7 @@ Take a look at buildroot documentation available online; Part 1, chapter 2: Syst
 As stated above, wifi is not active by default (used for debug). In order
 to enable it, 2 files need to be mofified :
 
-##### **/etc/network/interfaces** (here, dynamic ip)
+##### /etc/network/interfaces
 
 ```
   # The loopback network interface.
@@ -169,7 +169,7 @@ to enable it, 2 files need to be mofified :
   post-up /usr/sbin/udhcpd
 
 ```
-##### **/etc/wpa_supplicant.conf**
+##### /etc/wpa_supplicant.conf
 
 ```
   ctrl_interface=/var/run/wpa_supplicant
@@ -179,6 +179,7 @@ to enable it, 2 files need to be mofified :
   network={
     ssid="<Access_Point_SSID>"
     psk="<Password>"
+    # or psk=generated_passphrase_with_wpa_passphrase_without_quotation_marks
   }
 ```
 
