@@ -213,13 +213,20 @@ Programmer V2.1 and a homemade cable to get a terminal console (minicom) :
     UT0 : 4pins JST-SH         6pins 0.1"
           Female socket        Female socket
     ===========================================
-         GND    1  ----------------  1  GND
+         GND    1  -------------  1  GND
          3.3V   2  x     
-         RX     3  <---------------  4  Tx
-         TX     4  --------------->  5  Rx
+         RX     3  <------------  4  Tx
+         TX     4  ------------>  5  Rx
 ```
 
 ##### 10.2.1 Get some basic informations about available resources
+Plug the USB to serial adapter to UT0 Header (UART0) then boot the board
+from the SD Card. On Host side, open a serial terminal emulator :
+
+```
+    $ minicom -D /dev/ttyACM1 -b 115200
+```
+
   **The SD Card :**
 ```
   # fdisk -l /dev/mmcblk0
@@ -266,16 +273,9 @@ whatever the boot device...)
 
 Rebuild the firmware and a SD Card.
 
-##### 10.2.3 Clone the the SD Card content
-
-Plug the USB to serial adapter to UT0 Header (UART0). On Host side, open a
-terminal emulator :
-
-```
-    $ minicom -D /dev/ttyACM1 -b 115200
-```
-
-Power on the board, log in (root/root) and make a binary copy : 
+##### 10.2.3 Clone the SD Card content
+Power on the board from the freshly built SD Card, log in (root/root) and
+from the serial terminal emulator, make a binary copy : 
 
 ```
     # dd if=/dev/mmcblk0 bs=512 count=1048576 of=/dev/mmcblk1
@@ -283,15 +283,15 @@ Power on the board, log in (root/root) and make a binary copy :
 ```
 
 ##### 10.2.4 Adjust boot settings
-Power off the board then remove the SD Card. With the terminal emulator
-still alive, power on the board and catch the u-boot prompt before he
-fire up the OS (by default, a 2 second countdown).
+Power off the board then remove the SD Card. With the serial terminal emulator
+still alive, power on the board and catch the u-boot prompt before he fire up
+the OS (by default, a 2 second countdown).\
 We now need to tell u-boot where to find the two partitions (boot on VFAT
 and rootfs on ext4), then uEnv.txt (on the boot partition) will be adjusted.
 When u-boot is properly configured, he loads **uEnv.txt** file and execute the
 **uenvcmd** variable contents.
 
-The original uEnv.txt (on the SD card) :
+The **original uEnv.txt** (on the SD card) :
 
 ```
     bootpart=0:1
@@ -304,7 +304,7 @@ The original uEnv.txt (on the SD card) :
     uenvcmd=run set_mmc1; run set_bootargs;run loadimage;run loadfdt;printenv bootargs;bootz ${loadaddr} - ${fdtaddr}
 ```
 
-Adjust bootpart (u-boot partition), bootpartition (linux partition) and the boot arguments list :
+Adjust **bootpart** (u-boot partition), **bootpartition** (linux partition) and the **boot arguments list** :
 
 ```
     uboot> setenv bootpart 1:1
