@@ -265,7 +265,7 @@ Programmer V2.1 and a homemade cable to get a terminal console (minicom) :
 In Environment menu check the Environment type location (FAT) and set
 the correct device/partition :
 (For now, don't know how to get a more generic solution which would work
-whatever the boot support...)
+whatever the boot device...)
 
 ```
     Environment --->
@@ -280,7 +280,8 @@ Rebuild the firmware and a SD Card.
 
 #### 3. clone the the SD Card content
 
-On Host side, open a terminal emulator :
+Plug the USB to serial adapter to UT0 Header (UART0). On Host side, open a
+terminal emulator :
 
 ```
     $ minicom -D /dev/ttyACM1 -b 115200
@@ -294,11 +295,10 @@ Power on the board, log in (root/root) and make a binary copy :
 ```
 
 #### 4. Adjust boot settings
-Power off the board then remove the SD Card. Plug the USB to serial adapter
-to UT0 Header (UART0).
-With the terminal emulator still alive, power on the board and catch the
-u-boot prompt before he fire up the OS (by default, a 2 second countdown).
-We need to tell u-boot where to find the two partitions (boot on VFAT
+Power off the board then remove the SD Card. With the terminal emulator
+still alive, power on the board and catch the u-boot prompt before he
+fire up the OS (by default, a 2 second countdown).
+We now need to tell u-boot where to find the two partitions (boot on VFAT
 and rootfs on ext4), then uEnv.txt (on the boot partition) will be adjusted.
 When u-boot is properly configured, he loads uEnv.txt file and execute the
 uenvcmd variable contents.
