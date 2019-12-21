@@ -184,9 +184,8 @@ to enable it, 2 files need to be mofified :
 ```
 
 After a reboot, wifi should now be active, **but it is not the case!**
-I still don't know why, but in a ssh session, a manual start works :
-(nice reader lost here, will you please help me?)
-
+I still don't know why, but in a ssh session, a manual start works
+(nice reader lost here, will you please help me?) :
 
 ```
   # /etc/init.d/S60arduplane stop
@@ -204,6 +203,187 @@ I still don't know why, but in a ssh session, a manual start works :
   # /etc/init.d/S60arduplane start
 ```
 
+#### 10.2 Boot from the onboard Flash
+Ok, everythings is now working fine; it is time to transfer the software on
+the 4GB onboard Flash Memory. In this section, I use a Pololu USB AVR
+Programmer V2.1 and a homemade cable to get a terminal console (minicom) :
+
+```
+    BeagleBone Blue            Pololu Adatpter
+    UT0 : 4pins JST-SH         6pins 0.1"
+          Female socket        Female socket
+    ===========================================
+         GND    1  ----------------  1  GND
+         3.3V   2  x     
+         RX     3  <---------------  4  Tx
+         TX     4  --------------->  5  Rx
+```
+
+#### 1. Get some basic informations about available resources
+
+```
+  # ls -1 /dev/mmcblk*
+    /dev/mmcblk0
+    /dev/mmcblk0p1
+    /dev/mmcblk0p2
+    /dev/mmcblk1
+    /dev/mmcblk1boot0
+    /dev/mmcblk1boot1
+    /dev/mmcblk1rpmb
+```
+
+  **The SD Card :**
+```
+  # fdisk -l /dev/mmcblk0
+    Disk /dev/mmcblk0: 15 GB, 15931539456 bytes, 31116288 sectors
+    486192 cylinders, 4 heads, 16 sectors/track
+    Units: sectors of 1 * 512 = 512 bytes
+
+    Device       Boot StartCHS    EndCHS        StartLBA     EndLBA    Sectors  Size Id Type
+    /dev/mmcblk0p1 *  0,0,2       2,10,9               1      32768      32768 16.0M  c Win95 FAT32 (LBA)
+    /dev/mmcblk0p2    2,10,10     67,79,13         32769    1081344    1048576  512M 83 Linux
+```
+
+  **The onboard Flash :**
+```
+  # fdisk -l /dev/mmcblk1
+    Disk /dev/mmcblk1: 3648 MB, 3825205248 bytes, 7471104 sectors
+    116736 cylinders, 4 heads, 16 sectors/track
+    Units: sectors of 1 * 512 = 512 bytes
+
+    Disk /dev/mmcblk1 doesn't contain a valid partition table
+    (I destroyed the MBR when testing with debian...)
+```
+
+#### 2. Configure u-boot
+
+```
+  $ cd $ARDUPILOT_BLUE/buildroot
+  $ make uboot-menuconfig
+```
+
+In Environment menu check the Environment type location (FAT) and set
+the correct device/partition :
+(For now, don't know how to get a more generic solution which would work
+whatever the boot support...)
+
+```
+    Environment --->
+      ...
+      [*] Environment is in a FAT filesystem
+      ...
+      (1:1) Device and partition for where to store the environemt in FAT
+      ...
+```
+
+Rebuild the firmware and a SD Card.
+
+#### 3. clone the the SD Card content
+
+On Host side, open a terminal emulator :
+
+```
+    $ minicom -D /dev/ttyACM1 -b 115200
+```
+
+Power on the board, log in (root/root) and make a binary copy : 
+
+```
+    # dd if=/dev/mmcblk0 bs=512 count=1048576 of=/dev/mmcblk1
+    # sync
+```
+
+#### 4. Adjust boot settings
+Power off the board then remove the SD Card. Plug the USB to serial adapter
+to UT0 Header (UART0).
+With the terminal emulator still alive, power on the board and catch the
+u-boot prompt before he fire up the OS (by default, a 2 second countdown).
+We need to tell u-boot where to find the two partitions (boot on VFAT
+and rootfs on ext4), then uEnv.txt (on the boot partition) will be adjusted.
+When u-boot is properly configured, he loads uEnv.txt file and execute the
+uenvcmd variable contents.
+
+The original uEnv.txt (on the SD card) :
+
+```
+    bootpart=0:1
+    devtype=mmc
+    bootdir=
+    bootfile=zImage
+    bootpartition=mmcblk0p2
+    set_mmc1=if test $board_name = A33515BB; then setenv bootpartition mmcblk1p2; fi
+    set_bootargs=setenv bootargs console=ttyO0,115200n8 root=/dev/${bootpartition} rw rootfstype=ext4 rootwait
+    uenvcmd=run set_mmc1; run set_bootargs;run loadimage;run loadfdt;printenv bootargs;bootz ${loadaddr} - ${fdtaddr}
+```
+
+Adjust bootpart (boot) :
+
+    uboot> setenv bootpart 1:1
+
+Adjust bootpartition (rootfs) :
+
+    uboot> setenv bootpartition mmcblk1p2
+
+Adjust the boot arguments list :
+
+    uboot> setenv bootargs "console=ttyS0,115200n8 root=/dev/mmcblk1p2 rw rootfstype=ext4 rootwait"
+
+Check variables :
+
+```
+    uboot> printenv bootpart
+           bootpart=1:1
+    uboot> printenv devtype
+           devtype=mmc
+    uboot> printenv bootdir
+           ## Error: "bootdir" not defined
+    uboot> printenv bootfile
+           bootfile=zImage
+    uboot> printenv bootpartition
+           bootpartition=mmcblk1p2
+    uboot> printenv loadimage
+           loadimage=load ${devtype} ${bootpart} ${loadaddr} ${bootdir}/${bootfile}
+    uboot> printenv loadfdt
+           loadfdt=load ${devtype} ${bootpart} ${fdtaddr} ${bootdir}/${fdtfile}
+```
+
+Ok, now the boot sequence can be executed step by step 
+
+```
+    uboot> run loadimage
+           8360448 bytes read in 541 ms (14.7 MiB/s)
+    uboot> run loadfdt
+           88567 bytes read in 8 ms (10.6 MiB/s)
+    uboot> bootz ${loadaddr} - ${fdtaddr}
+           ## Flattened Device Tree blob at 88000000
+           Booting using the fdt blob at 0x88000000
+           Loading Device Tree to 8ffe7000, end 8ffff9f6 ... OK
+           Starting kernel ...
+           [    0.000000] Booting Linux on physical CPU 0x0
+           ...
+```
+
+Once logged in (root/root), uEnv.txt can be adjusted :
+
+```
+    # mkdir boot
+    # mount -t vfat /dev/mmcblk1p1 /boot
+    # nano /boot/uEnv.txt
+      bootpart=1:1
+      devtype=mmc
+      bootdir=
+      bootfile=zImage
+      bootpartition=mmcblk1p2
+      set_bootargs=setenv bootargs console=ttyS0,115200n8 root=/dev/${bootpartition} rw rootfstype=ext4 rootwait
+      uenvcmd=run set_bootargs;run loadimage;run loadfdt;printenv bootargs;bootz ${loadaddr} - ${fdtaddr}
+```
+
+A last reboot and the work should be done :
+
+```
+    # umount /dev/mmcblk1p1
+    # reboot
+```
 
 
 
