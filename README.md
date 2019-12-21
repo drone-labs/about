@@ -219,7 +219,7 @@ Programmer V2.1 and a homemade cable to get a terminal console (minicom) :
          TX     4  --------------->  5  Rx
 ```
 
-#### 1. Get some basic informations about available resources
+##### 10.2.1 Get some basic informations about available resources
 
 ```
   # ls -1 /dev/mmcblk*
@@ -255,7 +255,7 @@ Programmer V2.1 and a homemade cable to get a terminal console (minicom) :
     (I destroyed the MBR when testing with debian...)
 ```
 
-#### 2. Configure u-boot
+##### 10.2.2 Configure u-boot
 
 ```
   $ cd $ARDUPILOT_BLUE/buildroot
@@ -278,7 +278,7 @@ whatever the boot device...)
 
 Rebuild the firmware and a SD Card.
 
-#### 3. clone the the SD Card content
+##### 10.2.3 Clone the the SD Card content
 
 Plug the USB to serial adapter to UT0 Header (UART0). On Host side, open a
 terminal emulator :
@@ -294,7 +294,7 @@ Power on the board, log in (root/root) and make a binary copy :
     # sync
 ```
 
-#### 4. Adjust boot settings
+##### 10.2.4 Adjust boot settings
 Power off the board then remove the SD Card. With the terminal emulator
 still alive, power on the board and catch the u-boot prompt before he
 fire up the OS (by default, a 2 second countdown).
