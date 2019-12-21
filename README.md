@@ -220,18 +220,6 @@ Programmer V2.1 and a homemade cable to get a terminal console (minicom) :
 ```
 
 ##### 10.2.1 Get some basic informations about available resources
-
-```
-  # ls -1 /dev/mmcblk*
-    /dev/mmcblk0
-    /dev/mmcblk0p1
-    /dev/mmcblk0p2
-    /dev/mmcblk1
-    /dev/mmcblk1boot0
-    /dev/mmcblk1boot1
-    /dev/mmcblk1rpmb
-```
-
   **The SD Card :**
 ```
   # fdisk -l /dev/mmcblk0
@@ -300,8 +288,8 @@ still alive, power on the board and catch the u-boot prompt before he
 fire up the OS (by default, a 2 second countdown).
 We now need to tell u-boot where to find the two partitions (boot on VFAT
 and rootfs on ext4), then uEnv.txt (on the boot partition) will be adjusted.
-When u-boot is properly configured, he loads uEnv.txt file and execute the
-uenvcmd variable contents.
+When u-boot is properly configured, he loads **uEnv.txt** file and execute the
+**uenvcmd** variable contents.
 
 The original uEnv.txt (on the SD card) :
 
@@ -316,19 +304,15 @@ The original uEnv.txt (on the SD card) :
     uenvcmd=run set_mmc1; run set_bootargs;run loadimage;run loadfdt;printenv bootargs;bootz ${loadaddr} - ${fdtaddr}
 ```
 
-Adjust bootpart (boot) :
+Adjust bootpart (u-boot partition), bootpartition (linux partition) and the boot arguments list :
 
+```
     uboot> setenv bootpart 1:1
-
-Adjust bootpartition (rootfs) :
-
     uboot> setenv bootpartition mmcblk1p2
-
-Adjust the boot arguments list :
-
     uboot> setenv bootargs "console=ttyS0,115200n8 root=/dev/mmcblk1p2 rw rootfstype=ext4 rootwait"
+```
 
-Check variables :
+Make a last check :
 
 ```
     uboot> printenv bootpart
@@ -347,7 +331,7 @@ Check variables :
            loadfdt=load ${devtype} ${bootpart} ${fdtaddr} ${bootdir}/${fdtfile}
 ```
 
-Ok, now the boot sequence can be executed step by step 
+Then repeat the boot sequence step by step :
 
 ```
     uboot> run loadimage
