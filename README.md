@@ -370,7 +370,7 @@ A last reboot and the work should be done :
 ```
 #### 10.3 Monitoring Battery Level
 
-![Power Distribution Diagram](Syno-pwr-1a.png)
+![Power Distribution Diagram](images/Syno-pwr-1a.png)
 
 
 ## Build Ardupilot
