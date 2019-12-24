@@ -369,6 +369,12 @@ A last reboot and the work should be done :
     # reboot
 ```
 #### 10.3 Monitoring Battery Level
+A 2-cell LIPO Battery can be used to power the Board. The Battery balancing plug has
+to be plugged into the JST-XH **LIPO** header. **Check this point before buying**
+(Connector type and wiring diagram).
+Charging logic and protections are handled by the hardware. Monitoring the status Leds
+(BATT_LED_1 to BATT_LED_4) has to be done by software. Below is a simplified diagram
+of the BeagleBone Blue power distribution circuit :
 
 ![Power Distribution Diagram](images/Syno-pwr-1a.png)
 
