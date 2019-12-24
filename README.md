@@ -224,7 +224,7 @@ Plug the USB to serial adapter to UT0 Header (UART0) then boot the board
 from the SD Card. On Host side, open a serial terminal emulator :
 
 ```
-    $ minicom -D /dev/ttyACM1 -b 115200
+  $ minicom -D /dev/ttyACM1 -b 115200
 ```
 
   **The SD Card :**
@@ -263,19 +263,19 @@ the correct device/partition :
 whatever the boot device...)
 
 ```
-    Environment --->
-      ...
-      [*] Environment is in a FAT filesystem
-      ...
-      (1:1) Device and partition for where to store the environemt in FAT
-      ...
+  Environment --->
+    ...
+    [*] Environment is in a FAT filesystem
+    ...
+    (1:1) Device and partition for where to store the environemt in FAT
+    ...
 ```
 
 Rebuild the firmware and a SD Card.
 
 ##### 10.2.3 Clone the SD Card content
-Power on the board from the freshly built SD Card, log in (root/root) and
-from the serial terminal emulator, make a binary copy : 
+Power on the board from the freshly built SD Card, log in and from the
+serial terminal emulator, make a binary copy : 
 
 ```
     # dd if=/dev/mmcblk0 bs=512 count=1048576 of=/dev/mmcblk1

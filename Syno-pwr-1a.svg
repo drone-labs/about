@@ -1,0 +1,2266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="180mm"
+   height="68mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="Syno-pwr-1a.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker10286"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path10288"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9311"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path9313"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5670"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend"
+       inkscape:collect="always">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5672"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4896"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5157"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path5159"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4908"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <linearGradient
+       id="linearGradient3776"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop3778" />
+    </linearGradient>
+    <filter
+       id="filter3699"
+       inkscape:label="Blueprint"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Image effects"
+       inkscape:menu-tooltip="Detect color edges and retrace them in blue"
+       style="color-interpolation-filters:sRGB">
+      <feConvolveMatrix
+         id="feConvolveMatrix3701"
+         order="3 3"
+         kernelMatrix="1 1 1 1 -8 1 1 1 1"
+         in="SourceGraphic"
+         divisor="1"
+         targetX="1"
+         targetY="1"
+         preserveAlpha="true"
+         result="result0"
+         bias="0" />
+      <feColorMatrix
+         id="feColorMatrix3703"
+         result="result3"
+         values="-0.15 -0.3 -0.05 0 1 -0.15 -0.3 -0.05 0 1 0 0 0 0 1 0 0 0 1 0" />
+    </filter>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5670-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5672-7" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5670-5-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5672-7-1" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9311-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9313-0"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="283.57972"
+     inkscape:cy="142.62346"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g4798"
+     showgrid="true"
+     units="mm"
+     borderlayer="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-page="true"
+     inkscape:snap-to-guides="true"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-center="false"
+     inkscape:snap-midpoints="false"
+     inkscape:snap-others="false"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3004"
+       empspacing="10"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       units="mm"
+       spacingx="0.70866142"
+       spacingy="0.70866142"
+       dotted="false"
+       empcolor="#ff0002"
+       empopacity="0.25098039"
+       color="#ff0000"
+       opacity="0.1254902" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="img"
+     transform="translate(0,-503.14966)" />
+  <g
+     inkscape:label="Draw"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(0,-811.41736)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Frame"
+     style="display:inline"
+     transform="translate(0,-503.14966)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3662"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion3664"><rect
+           id="rect3666"
+           width="58.104393"
+           height="71.309937"
+           x="789.69153"
+           y="477.3425" /></flowRegion><flowPara
+         id="flowPara3668" /></flowRoot>    <g
+       id="g4798"
+       transform="translate(4e-7,814.96066)">
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="3.5433118"
+         ry="0"
+         y="-109.1338"
+         x="386.22046"
+         height="13.464559"
+         width="104.17324"
+         id="rect4184-4-0-6-5-15-4-0-1-7"
+         style="display:inline;fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-8-8"
+         y="-237.53268"
+         x="485.93628"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-4-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end"
+           y="-237.53268"
+           x="485.93628"
+           sodipodi:role="line">GPIO0_11</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7"
+         y="-290.12732"
+         x="484.96072"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end"
+           y="-290.12732"
+           x="484.96072"
+           sodipodi:role="line">VOUT_USER_3P3V</tspan></text>
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="1.4173228"
+         ry="0"
+         y="-269.29132"
+         x="141.73228"
+         height="28.34647"
+         width="42.519684"
+         id="rect4184-4-0-6-5-15"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2"
+         y="-298.59109"
+         x="202.42842"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle;fill:#ff00ff;fill-opacity:1"
+           y="-298.59109"
+           x="202.42842"
+           sodipodi:role="line">5.0V</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4422"
+         d="m 28.346457,-279.92122 21.259842,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.54330707;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4424"
+         d="m 35.433071,-272.83461 14.173228,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582677;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="0.69509763"
+         rx="0.71137482"
+         cy="-272.84818"
+         cx="49.609013"
+         id="path4430"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         rx="1.41732"
+         y="-283.46454"
+         x="24.80315"
+         height="14.173228"
+         width="28.346457"
+         id="rect4432"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8"
+         y="-311.10641"
+         x="39.846355"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-5-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-311.10641"
+           x="39.846355"
+           sodipodi:role="line">Power Jack 5.5x2.1</tspan><tspan
+           id="tspan4452"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-303.60641"
+           x="39.846355"
+           sodipodi:role="line">9-18V DC Input</tspan></text>
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5512-2"
+         d="m 102.88884,-283.41309 0,7.08662 6.51643,-3.54331 z"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5514-0"
+         d="m 109.79625,-284.21679 0.0217,8.54196"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4487"
+         d="m 49.606299,-279.92122 53.149611,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path4508"
+         d="m 49.606299,-272.83461 38.976378,0 0.08689,10.73582"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4510"
+         d="m 85.748031,-262.20469 5.669292,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         rx="9.9462886e-07"
+         y="-265.74799"
+         x="69.09449"
+         height="10.629934"
+         width="3.5433035"
+         id="rect4512"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4550"
+         d="m 70.86614,-255.171 0.018,7.13274"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4552"
+         d="m 70.86614,-265.74797 0,-7.08662"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="0.69509763"
+         rx="0.71137482"
+         cy="-272.80344"
+         cx="70.877045"
+         id="path4430-6"
+         style="display:inline;opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4584"
+         d="m 65.905512,-248.03146 9.92126,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4590"
+         d="m 67.322835,-246.61414 7.086614,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4592"
+         d="m 68.740158,-245.19682 4.251968,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1"
+         y="-276.33124"
+         x="94.04512"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-276.33124"
+           x="94.04512"
+           sodipodi:role="line">GND</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-3"
+         y="-261.7695"
+         x="80.806046"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-261.7695"
+           x="80.806046"
+           sodipodi:role="line">CGND</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-9"
+         y="-273.48141"
+         x="60.695259"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-273.48141"
+           x="60.695259"
+           sodipodi:role="line">0.1</tspan></text>
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5512-2-4"
+         d="m 102.61743,-237.40155 0,7.08662 6.51643,-3.54331 z"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5514-0-5"
+         d="m 109.52484,-238.20525 0.0217,8.54196"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         rx="9.9462898e-07"
+         y="-235.27556"
+         x="48.188976"
+         height="2.8346457"
+         width="2.8346457"
+         id="rect4665"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="1.4173229"
+         cy="-219.68501"
+         cx="49.6063"
+         id="path4669"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="1.4173229"
+         cy="-205.51178"
+         cx="49.6063"
+         id="path4671"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         rx="1.41732"
+         y="-240.94485"
+         x="42.519684"
+         height="42.51968"
+         width="14.173232"
+         id="rect4432-1"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4688"
+         d="m 51.023622,-233.85824 51.732288,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4690"
+         d="m 109.84252,-233.85824 10.62992,0 0,-46.06299 -10.62992,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4692"
+         d="m 141.73228,-255.11808 -21.25984,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 120.80619,-255.74323 a 0.70866144,0.70866144 0 0 1 0.30561,0.9308 0.70866144,0.70866144 0 0 1 -0.91629,0.34667 0.70866144,0.70866144 0 0 1 -0.38704,-0.9 0.70866144,0.70866144 0 0 1 0.88191,-0.42663"
+         sodipodi:open="true"
+         sodipodi:end="5.0249949"
+         sodipodi:start="5.2027567"
+         sodipodi:ry="0.70866144"
+         sodipodi:rx="0.70866144"
+         sodipodi:cy="-255.11807"
+         sodipodi:cx="120.47244"
+         sodipodi:type="arc"
+         id="path4704"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2"
+         y="-286.3605"
+         x="144.15712"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-286.3605"
+           x="144.15712"
+           sodipodi:role="line">5VREG</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5"
+         y="-276.40329"
+         x="138.65695"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-276.40329"
+           x="138.65695"
+           sodipodi:role="line">AP1509</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-270.15329"
+           x="138.65695"
+           sodipodi:role="line"
+           id="tspan5150">5V/2A</tspan></text>
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="1.4173228"
+         ry="0"
+         y="-226.77162"
+         x="141.73228"
+         height="28.346457"
+         width="28.346457"
+         id="rect4184-4-0-6-5-15-4"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4688-1"
+         d="m 51.023622,-219.68501 90.708658,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4688-1-7"
+         d="m 51.023622,-205.51178 90.708658,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-3-1"
+         y="-248.80379"
+         x="61.5322"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617-1-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-248.80379"
+           x="61.5322"
+           sodipodi:role="line">V_BATT</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-3-1-1"
+         y="-233.76549"
+         x="61.905743"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617-1-1-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-233.76549"
+           x="61.905743"
+           sodipodi:role="line">BATT_MID</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-3-1-1-0"
+         y="-218.71246"
+         x="61.764374"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617-1-1-7-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-218.71246"
+           x="61.764374"
+           sodipodi:role="line">BATT_MINUS</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-3-1-1-08"
+         y="-263.26712"
+         x="34.054375"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617-1-1-7-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-263.26712"
+           x="34.054375"
+           sodipodi:role="line">LIPO</tspan><tspan
+           id="tspan4640"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-256.70462"
+           x="34.054375"
+           sodipodi:role="line">(JST-XH)</tspan></text>
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path4871"
+         d="m 49.606299,-204.09446 0,19.84252 63.779531,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4875"
+         d="m 170.07874,-212.59839 14.17323,0 0,42.51968 -63.77953,0 0,-12.04724"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5157)" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4510-7-1"
+         d="m 131.10236,-177.16532 7.08662,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5250"
+         d="m 134.64567,-177.16532 0,-7.08662 -8.50394,0 1.41733,-2.12598 1.41732,2.12598"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 113.71958,-184.87709 a 0.70866144,0.70866144 0 0 1 0.30562,0.93079 0.70866144,0.70866144 0 0 1 -0.9163,0.34667 0.70866144,0.70866144 0 0 1 -0.38703,-0.89999 0.70866144,0.70866144 0 0 1 0.8819,-0.42663"
+         sodipodi:open="true"
+         sodipodi:end="5.0249949"
+         sodipodi:start="5.2027567"
+         sodipodi:ry="0.70866144"
+         sodipodi:rx="0.70866144"
+         sodipodi:cy="-184.25194"
+         sodipodi:cx="113.38583"
+         sodipodi:type="arc"
+         id="path5252"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5254"
+         d="m 113.38583,-184.25194 14.88189,-2.83464"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6"
+         y="-241.21965"
+         x="142.24503"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-241.21965"
+           x="142.24503"
+           sodipodi:role="line">PROT</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-2"
+         y="-201.87933"
+         x="135.96352"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-19"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#830000;fill-opacity:1"
+           y="-201.87933"
+           x="135.96352"
+           sodipodi:role="line">Discharge</tspan><tspan
+           id="tspan5642"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#830000;fill-opacity:1"
+           y="-194.37933"
+           x="135.96352"
+           sodipodi:role="line">Protection</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6"
+         y="-230.92299"
+         x="137.11267"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-1-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-230.92299"
+           x="137.11267"
+           sodipodi:role="line">S-8261</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-224.67299"
+           x="137.11267"
+           sodipodi:role="line"
+           id="tspan5069">Vth=2.5V</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path5662"
+         d="m 184.25197,-255.11808 28.34646,0 0,-21.25984"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5670)" />
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="1.4173228"
+         ry="0"
+         y="-155.90549"
+         x="92.125984"
+         height="42.519691"
+         width="28.346457"
+         id="rect4184-4-0-6-5-15-4-9"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5731"
+         d="m 77.952756,-233.85824 0,85.03937 14.173229,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5733"
+         d="m 63.779528,-219.68501 0,85.03937 28.346457,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5735"
+         d="m 49.606299,-184.25194 0,63.77953 42.519686,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 78.286503,-234.48338 a 0.70866144,0.70866144 0 0 1 0.305618,0.93079 0.70866144,0.70866144 0 0 1 -0.916298,0.34667 0.70866144,0.70866144 0 0 1 -0.387033,-0.89999 0.70866144,0.70866144 0 0 1 0.88191,-0.42664"
+         sodipodi:open="true"
+         sodipodi:end="5.0249949"
+         sodipodi:start="5.2027567"
+         sodipodi:ry="0.70866144"
+         sodipodi:rx="0.70866144"
+         sodipodi:cy="-233.85823"
+         sodipodi:cx="77.952759"
+         sodipodi:type="arc"
+         id="path5737"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         d="m 64.113274,-220.31017 a 0.70866144,0.70866144 0 0 1 0.305618,0.9308 0.70866144,0.70866144 0 0 1 -0.916298,0.34667 0.70866144,0.70866144 0 0 1 -0.387033,-0.9 0.70866144,0.70866144 0 0 1 0.88191,-0.42663"
+         sodipodi:open="true"
+         sodipodi:end="5.0249949"
+         sodipodi:start="5.2027567"
+         sodipodi:ry="0.70866144"
+         sodipodi:rx="0.70866144"
+         sodipodi:cy="-219.68501"
+         sodipodi:cx="63.77953"
+         sodipodi:type="arc"
+         id="path5739"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         d="m 49.940045,-184.87709 a 0.70866144,0.70866144 0 0 1 0.305618,0.93079 0.70866144,0.70866144 0 0 1 -0.916299,0.34667 0.70866144,0.70866144 0 0 1 -0.387032,-0.89999 0.70866144,0.70866144 0 0 1 0.88191,-0.42663"
+         sodipodi:open="true"
+         sodipodi:end="5.0249949"
+         sodipodi:start="5.2027567"
+         sodipodi:ry="0.70866144"
+         sodipodi:rx="0.70866144"
+         sodipodi:cy="-184.25194"
+         sodipodi:cx="49.6063"
+         sodipodi:type="arc"
+         id="path5741"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="1.4173228"
+         ry="0"
+         y="-155.90549"
+         x="155.90552"
+         height="42.519707"
+         width="28.346441"
+         id="rect4184-4-0-6-5-15-4-0"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-3-1-2"
+         y="-169.99857"
+         x="208.4099"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617-1-1-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-169.99857"
+           x="208.4099"
+           sodipodi:role="line">V_BATT</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-3-1-7"
+         y="-143.7252"
+         x="120.06996"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4617-1-1-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-143.7252"
+           x="120.06996"
+           sodipodi:role="line">CHG_EN</tspan></text>
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path5662-1"
+         d="m 184.25197,-120.47241 49.6063,0 0,-35.43307"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5670-5)" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6892"
+         d="m 120.47244,-134.64564 35.43307,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-3"
+         y="-168.08202"
+         x="87.525642"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-168.08202"
+           x="87.525642"
+           sodipodi:role="line">BAL</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-38"
+         y="-167.08627"
+         x="148.15393"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-167.08627"
+           x="148.15393"
+           sodipodi:role="line">CHGIC</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6-8"
+         y="-112.15783"
+         x="87.120483"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan6946"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#830000;fill-opacity:1"
+           y="-112.15783"
+           x="87.120483"
+           sodipodi:role="line">OverVoltage</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#830000;fill-opacity:1"
+           y="-105.90783"
+           x="87.120483"
+           sodipodi:role="line"
+           id="tspan5156">protection and</tspan><tspan
+           id="tspan6948"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#830000;fill-opacity:1"
+           y="-99.657829"
+           x="87.120483"
+           sodipodi:role="line">Balance</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6-8-6"
+         y="-112.15783"
+         x="147.71805"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan6946-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#830000;fill-opacity:1"
+           y="-112.15783"
+           x="147.71805"
+           sodipodi:role="line">2A 1-2 Cell</tspan><tspan
+           id="tspan6948-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#830000;fill-opacity:1"
+           y="-105.90783"
+           x="147.71805"
+           sodipodi:role="line">LIPO Charger</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8"
+         y="-298.36728"
+         x="73.542648"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle;fill:#ff00ff;fill-opacity:1"
+           y="-298.36728"
+           x="73.542648"
+           sodipodi:role="line">VCC</tspan></text>
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path5662-1-1"
+         d="m 184.25197,-148.81887 21.25984,0 0,-14.17322"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5670-5-4)" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path5512-2-4-3"
+         d="m 208.34646,-143.85824 -5.66929,0 2.83464,4.25197 z"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9004"
+         d="m 202.67717,-139.60627 5.66929,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9016"
+         d="m 184.25197,-134.64564 21.25984,0 0,-4.96063"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9018"
+         d="m 205.51181,-148.81887 0,4.96063"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 205.85891,-148.20103 a 0.70866144,0.70866144 0 0 1 -0.96421,-0.26944 0.70866144,0.70866144 0 0 1 0.26742,-0.96477 0.70866144,0.70866144 0 0 1 0.96533,0.26539 0.70866144,0.70866144 0 0 1 -0.26336,0.96589"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="0.70866144"
+         sodipodi:rx="0.70866144"
+         sodipodi:cy="-148.81886"
+         sodipodi:cx="205.51181"
+         sodipodi:type="arc"
+         id="path9020"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-5"
+         y="-175.79031"
+         x="194.70879"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle;fill:#ff00ff;fill-opacity:1"
+           y="-175.79031"
+           x="194.70879"
+           sodipodi:role="line">VCC</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6-8-6-3"
+         y="-140.04941"
+         x="155.20279"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan6948-0-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-140.04941"
+           x="155.20279"
+           sodipodi:role="line">CHGOK</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6-8-6-3-0"
+         y="-154.98656"
+         x="164.84135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan6948-0-5-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-154.98656"
+           x="164.84135"
+           sodipodi:role="line">VIN</tspan></text>
+      <path
+         d="m 207.59442,-138.02524 a 4.2519684,4.2519684 0 0 1 -5.78525,-1.61663 4.2519684,4.2519684 0 0 1 1.60449,-5.78863 4.2519684,4.2519684 0 0 1 5.79198,1.59234 4.2519684,4.2519684 0 0 1 -1.58017,5.79531"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="4.2519684"
+         sodipodi:rx="4.2519684"
+         sodipodi:cy="-141.73225"
+         sodipodi:cx="205.51181"
+         sodipodi:type="arc"
+         id="path9014"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9086"
+         d="m 340.15748,-290.55115 0,134.64567 177.16536,0 0,-134.64567"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="1.4173228"
+         ry="0"
+         y="-255.11807"
+         x="304.7244"
+         height="14.173224"
+         width="14.173233"
+         id="rect4184-4-0-6-5-15-4-0-3"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56"
+         y="-258.97083"
+         x="295.85751"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-258.97083"
+           x="295.85751"
+           sodipodi:role="line">/11</tspan></text>
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="1.4173228"
+         ry="0"
+         y="-233.85823"
+         x="304.7244"
+         height="14.173224"
+         width="14.173233"
+         id="rect4184-4-0-6-5-15-4-0-3-9"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-9"
+         y="-236.40858"
+         x="295.77353"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-236.40858"
+           x="295.77353"
+           sodipodi:role="line">/11</tspan></text>
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="1.4173228"
+         ry="0"
+         y="-212.59839"
+         x="304.7244"
+         height="14.173224"
+         width="14.173233"
+         id="rect4184-4-0-6-5-15-4-0-3-7"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-6"
+         y="-214.40451"
+         x="295.35364"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-214.40451"
+           x="295.35364"
+           sodipodi:role="line">/2</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path9152"
+         d="m 318.89764,-248.03146 21.25984,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9154"
+         d="m 318.89764,-226.77162 21.25984,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9156"
+         d="m 318.89764,-205.51178 21.25984,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9152-7"
+         d="m 283.46457,-248.03146 21.25984,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9154-6"
+         d="m 283.46457,-226.77162 21.25984,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9156-1"
+         d="m 283.46457,-205.51178 21.25984,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8-5"
+         y="-259.45941"
+         x="266.67245"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end;fill:#ff00ff;fill-opacity:1"
+           y="-259.45941"
+           x="266.67245"
+           sodipodi:role="line">VCC</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8-5-6"
+         y="-237.35577"
+         x="267.60358"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0-0-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end;fill:#ff00ff;fill-opacity:1"
+           y="-237.35577"
+           x="267.60358"
+           sodipodi:role="line">V_BATT</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8-5-0"
+         y="-214.63855"
+         x="266.59586"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0-0-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end;fill:#ff00ff;fill-opacity:1"
+           y="-214.63855"
+           x="266.59586"
+           sodipodi:role="line">3.3V</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1"
+         y="-259.21393"
+         x="328.41046"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-259.21393"
+           x="328.41046"
+           sodipodi:role="line">AIN5</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-2"
+         y="-237.11293"
+         x="328.41046"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-237.11293"
+           x="328.41046"
+           sodipodi:role="line">AIN6</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9"
+         y="-214.94305"
+         x="328.41046"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-214.94305"
+           x="328.41046"
+           sodipodi:role="line">AIN7</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-0"
+         y="-294.22556"
+         x="399.27713"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;text-anchor:middle"
+           y="-294.22556"
+           x="399.27713"
+           sodipodi:role="line">SIP</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-2"
+         y="-285.47491"
+         x="390.71609"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-1-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-285.47491"
+           x="390.71609"
+           sodipodi:role="line">OSD3358</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path9303"
+         d="m 517.32284,-276.37792 21.25984,0 0,-14.17323"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker9311)" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path9303-3"
+         d="m 517.32284,-262.20469 35.43307,3e-5 0,-21.25988"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker9311-4)" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8-5-0-2"
+         y="-310.33844"
+         x="516.74164"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0-0-8-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end;fill:#ff00ff;fill-opacity:1"
+           y="-310.33844"
+           x="516.74164"
+           sodipodi:role="line">3.3V</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8-5-0-2-0"
+         y="-303.13727"
+         x="520.17804"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0-0-8-8-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-303.13727"
+           x="520.17804"
+           sodipodi:role="line">3.3V_AUX</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0"
+         y="-274.75592"
+         x="484.96072"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end"
+           y="-274.75592"
+           x="484.96072"
+           sodipodi:role="line">VOUT_LDO_3P3V</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path9712"
+         d="m 566.92914,-265.03934 0,5.66929 4.25196,-2.83464 z"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9714"
+         d="m 571.1811,-265.03934 0,5.66929"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 571.13773,-258.49767 a 4.2519684,4.2519684 0 0 1 -5.78525,-1.61662 4.2519684,4.2519684 0 0 1 1.60448,-5.78863 4.2519684,4.2519684 0 0 1 5.79198,1.59233 4.2519684,4.2519684 0 0 1 -1.58017,5.79531"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="4.2519684"
+         sodipodi:rx="4.2519684"
+         sodipodi:cy="-262.20468"
+         sodipodi:cx="569.05511"
+         sodipodi:type="arc"
+         id="path9720"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9712-4"
+         d="m 538.58268,-243.7795 0,5.66929 4.25196,-2.83464 z"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9714-9"
+         d="m 542.83463,-243.7795 0,5.66929"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 542.79123,-237.23782 a 4.2519684,4.2519684 0 0 1 -5.78525,-1.61663 4.2519684,4.2519684 0 0 1 1.60448,-5.78863 4.2519684,4.2519684 0 0 1 5.79199,1.59233 4.2519684,4.2519684 0 0 1 -1.58017,5.79531"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="4.2519684"
+         sodipodi:rx="4.2519684"
+         sodipodi:cy="-240.94484"
+         sodipodi:cx="540.70862"
+         sodipodi:type="arc"
+         id="path9720-2"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         rx="0"
+         y="-242.36217"
+         x="559.84253"
+         height="2.8346391"
+         width="9.9212523"
+         id="rect9743"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9745"
+         d="m 542.83465,-240.94485 17.00787,0 0,0 0,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         rx="0"
+         y="-263.62204"
+         x="578.2677"
+         height="2.8346391"
+         width="9.9212523"
+         id="rect9743-7"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9745-4"
+         d="m 571.1811,-262.20469 7.08661,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9745-2"
+         d="m 552.75591,-262.20469 14.17323,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 553.10302,-261.58685 a 0.70866144,0.70866144 0 0 1 -0.96421,-0.26943 0.70866144,0.70866144 0 0 1 0.26742,-0.96477 0.70866144,0.70866144 0 0 1 0.96533,0.26538 0.70866144,0.70866144 0 0 1 -0.26336,0.96589"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="0.70866144"
+         sodipodi:rx="0.70866144"
+         sodipodi:cy="-262.20468"
+         sodipodi:cx="552.75592"
+         sodipodi:type="arc"
+         id="path9789"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9745-5"
+         d="m 517.32284,-240.94485 21.25984,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9712-4-2"
+         d="m 538.58268,-229.60627 0,5.66929 4.25196,-2.83464 z"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9714-9-4"
+         d="m 542.83463,-229.60627 0,5.66929"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 542.79123,-223.06461 a 4.2519684,4.2519684 0 0 1 -5.78525,-1.61662 4.2519684,4.2519684 0 0 1 1.60448,-5.78863 4.2519684,4.2519684 0 0 1 5.79199,1.59233 4.2519684,4.2519684 0 0 1 -1.58017,5.79531"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="4.2519684"
+         sodipodi:rx="4.2519684"
+         sodipodi:cy="-226.77162"
+         sodipodi:cx="540.70862"
+         sodipodi:type="arc"
+         id="path9720-2-4"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         rx="0"
+         y="-228.18895"
+         x="559.84247"
+         height="2.8346391"
+         width="9.9212523"
+         id="rect9743-3"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9745-8"
+         d="m 542.83465,-226.77162 17.00787,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-6"
+         d="m 517.32284,-226.77162 21.25984,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9712-4-0"
+         d="m 538.58268,-215.43304 0,5.66929 4.25196,-2.83464 z"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9714-9-8"
+         d="m 542.83463,-215.43304 0,5.66929"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 542.79123,-208.89139 a 4.2519684,4.2519684 0 0 1 -5.78525,-1.61663 4.2519684,4.2519684 0 0 1 1.60448,-5.78862 4.2519684,4.2519684 0 0 1 5.79199,1.59233 4.2519684,4.2519684 0 0 1 -1.58017,5.79531"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="4.2519684"
+         sodipodi:rx="4.2519684"
+         sodipodi:cy="-212.5984"
+         sodipodi:cx="540.70862"
+         sodipodi:type="arc"
+         id="path9720-2-9"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         rx="0"
+         y="-214.01573"
+         x="559.84253"
+         height="2.8346391"
+         width="9.9212523"
+         id="rect9743-2"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9745-23"
+         d="m 542.83465,-212.59839 17.00787,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-1"
+         d="m 517.32284,-212.59839 21.25984,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9712-4-8"
+         d="m 538.58268,-201.25982 0,5.66929 4.25196,-2.83464 z"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9714-9-3"
+         d="m 542.83463,-201.25982 0,5.66929"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         d="m 542.79123,-194.71816 a 4.2519684,4.2519684 0 0 1 -5.78525,-1.61662 4.2519684,4.2519684 0 0 1 1.60448,-5.78863 4.2519684,4.2519684 0 0 1 5.79199,1.59233 4.2519684,4.2519684 0 0 1 -1.58017,5.79531"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="4.2519684"
+         sodipodi:rx="4.2519684"
+         sodipodi:cy="-198.42517"
+         sodipodi:cx="540.70862"
+         sodipodi:type="arc"
+         id="path9720-2-42"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         rx="0"
+         y="-199.8425"
+         x="559.84253"
+         height="2.8346391"
+         width="9.9212523"
+         id="rect9743-24"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9745-51"
+         d="m 542.83465,-198.42517 17.00787,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-7"
+         d="m 517.32284,-198.42517 21.25984,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path9868"
+         d="m 588.18898,-262.20469 7.08661,0 0,77.95275 0,0 0,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-5"
+         d="m 569.76378,-240.94485 25.51181,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-5-7"
+         d="m 569.76378,-226.77162 25.51181,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-5-1"
+         d="m 569.76378,-212.59839 25.51181,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-5-6"
+         d="m 569.76378,-198.42517 25.51181,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9912"
+         d="m 591.73229,-184.25194 7.08661,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.41732287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-9"
+         y="-246.12473"
+         x="518.34033"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff0000;fill-opacity:1"
+           y="-246.12473"
+           x="518.34033"
+           sodipodi:role="line">BATT_LED1</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-9-1"
+         y="-231.14613"
+         x="518.25806"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-8-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#00ff00;fill-opacity:1"
+           y="-231.14613"
+           x="518.25806"
+           sodipodi:role="line">BATT_LED2</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-9-3"
+         y="-215.92516"
+         x="518.25806"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-8-37"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#00ff00;fill-opacity:1"
+           y="-215.92516"
+           x="518.25806"
+           sodipodi:role="line">BATT_LED3</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-9-9"
+         y="-201.05846"
+         x="518.45911"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-8-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#00ff00;fill-opacity:1"
+           y="-201.05846"
+           x="518.45911"
+           sodipodi:role="line">BATT_LED4</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-9-9-6"
+         y="-283.6297"
+         x="545.22675"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-8-8-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#0000ff;fill-opacity:1"
+           y="-283.6297"
+           x="545.22675"
+           sodipodi:role="line">ON</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-9-9-0"
+         y="-151.46873"
+         x="200.53648"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-8-8-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#00ff00;fill-opacity:1"
+           y="-151.46873"
+           x="200.53648"
+           sodipodi:role="line">CHG</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-8"
+         y="-252.45015"
+         x="485.07126"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end"
+           y="-252.45015"
+           x="485.07126"
+           sodipodi:role="line">GPIO0_27</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-8-6"
+         y="-222.52406"
+         x="485.12628"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-4-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end"
+           y="-222.52406"
+           x="485.12628"
+           sodipodi:role="line">GPIO1_29</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-7-0-8-5"
+         y="-207.77856"
+         x="485.10626"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-0-3-4-2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end"
+           y="-207.77856"
+           x="485.10626"
+           sodipodi:role="line">GPIO0_26</tspan></text>
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="1.4173228"
+         ry="0"
+         y="-141.73227"
+         x="290.55121"
+         height="42.519707"
+         width="28.346441"
+         id="rect4184-4-0-6-5-15-4-0-1"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path10069"
+         d="m 233.85827,-120.47241 56.69291,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path10071"
+         d="m 304.72441,-141.73225 0,-28.34646 35.43307,0 0,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-9-9"
+         y="-178.08449"
+         x="330.7128"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-1-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-178.08449"
+           x="330.7128"
+           sodipodi:role="line">GPIO2_16</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-38-6"
+         y="-183.11633"
+         x="278.72299"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-5-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-183.11633"
+           x="278.72299"
+           sodipodi:role="line">SERVO_EN</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-38-6-6"
+         y="-142.57399"
+         x="286.17798"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-5-0-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-142.57399"
+           x="286.17798"
+           sodipodi:role="line">EN</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-38-6-6-9"
+         y="-124.9341"
+         x="278.50418"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-5-0-4-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-124.9341"
+           x="278.50418"
+           sodipodi:role="line">VIN</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-9"
+         y="-142.12967"
+         x="333.62408"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#ff00ff;fill-opacity:1"
+           y="-142.12967"
+           x="333.62408"
+           sodipodi:role="line">SERVO PWR</tspan></text>
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path5662-14"
+         d="m 318.89764,-120.47241 28.34646,0 0,-14.17323"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10286)" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-38-6-6-9-8"
+         y="-125.05531"
+         x="301.71262"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-5-0-4-9-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end"
+           y="-125.05531"
+           x="301.71262"
+           sodipodi:role="line">OUT</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-38-67"
+         y="-153.05609"
+         x="265.42148"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-5-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-153.05609"
+           x="265.42148"
+           sodipodi:role="line">6VREG</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path9152-1"
+         d="m 318.89764,-269.29131 21.25984,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8-5-5"
+         y="-281.53766"
+         x="299.97125"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0-0-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end;fill:#ff00ff;fill-opacity:1"
+           y="-281.53766"
+           x="299.97125"
+           sodipodi:role="line">5.0V</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-56-1-90"
+         y="-281.92368"
+         x="329.05945"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-5-2-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-281.92368"
+           x="329.05945"
+           sodipodi:role="line">VIN_AC</tspan></text>
+      <path
+         d="m 234.20536,-119.85455 a 0.70866144,0.70866144 0 0 1 -0.9642,-0.26944 0.70866144,0.70866144 0 0 1 0.26741,-0.96477 0.70866144,0.70866144 0 0 1 0.96533,0.26539 0.70866144,0.70866144 0 0 1 -0.26336,0.96588"
+         sodipodi:open="true"
+         sodipodi:end="1.0505416"
+         sodipodi:start="1.0589366"
+         sodipodi:ry="0.70866144"
+         sodipodi:rx="0.70866144"
+         sodipodi:cy="-120.47239"
+         sodipodi:cx="233.85826"
+         sodipodi:type="arc"
+         id="path4454"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         rx="1.41732"
+         y="-170.07869"
+         x="581.10236"
+         height="56.692905"
+         width="14.173237"
+         id="rect4432-1-3"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         rx="9.9462898e-07"
+         y="-121.88972"
+         x="586.77167"
+         height="2.8346457"
+         width="2.8346457"
+         id="rect4665-8"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="1.4173229"
+         cy="-148.81885"
+         cx="588.18896"
+         id="path4669-5"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="1.4173229"
+         cy="-134.6456"
+         cx="588.18896"
+         id="path4671-6"
+         style="display:inline;opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="1.4173229"
+         cy="-162.99208"
+         cx="588.18896"
+         id="path4507"
+         style="opacity:0.88599997;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-38-67-1"
+         y="-111.10695"
+         x="548.99561"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-5-7-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-111.10695"
+           x="548.99561"
+           sodipodi:role="line"><tspan
+   id="tspan4660"
+   style="fill:#ff00ff;fill-opacity:1">PWR</tspan> (JST-SH)</tspan></text>
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-7-9"
+         d="m 566.92916,-162.99208 19.84251,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-7-8"
+         d="m 566.92916,-148.81885 19.84252,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path9745-5-7-8-8"
+         d="m 566.92916,-120.47239 19.84252,0 0,0 0,0"
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4569"
+         d="m 586.77168,-134.64562 -19.84252,0 0,28.34645"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53149605;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path4571"
+         d="m 563.38585,-106.29917 7.08661,0 0,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.41732287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="0.70866144"
+         cy="-120.4724"
+         cx="566.92914"
+         id="path4575"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8-5-5-1"
+         y="-154.81075"
+         x="535.06927"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0-0-0-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end;fill:#ff00ff;fill-opacity:1"
+           y="-154.81075"
+           x="535.06927"
+           sodipodi:role="line">5.0V</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-2-8-5-0-3"
+         y="-170.16011"
+         x="535.06927"
+         style="font-style:normal;font-weight:normal;font-size:6.79902792px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan3318-7-0-0-8-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:end;text-anchor:end;fill:#ff00ff;fill-opacity:1"
+           y="-170.16011"
+           x="535.06927"
+           sodipodi:role="line">3.3V</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6-8-6-37-4"
+         y="-100.55671"
+         x="523.9057"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan6948-0-2-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-100.55671"
+           x="523.9057"
+           sodipodi:role="line"> Prototyping Power Rails</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-6-38-67-1-2"
+         y="-105.80296"
+         x="369.45099"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan4452-7-6-5-7-5-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start"
+           y="-105.80296"
+           x="369.45099"
+           sodipodi:role="line">Power Distribution Summary</tspan></text>
+      <circle
+         r="0.70866144"
+         cy="-240.94482"
+         cx="595.27557"
+         id="path4694"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="0.70866144"
+         cy="-226.77161"
+         cx="595.27557"
+         id="path4696"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="0.70866144"
+         cy="-212.59837"
+         cx="595.27557"
+         id="path4698"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <circle
+         r="0.70866144"
+         cy="-198.42516"
+         cx="595.27557"
+         id="path4700"
+         style="opacity:0.88599997;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.53149605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         rx="14.173244"
+         ry="0"
+         y="-304.72437"
+         x="7.0866141"
+         height="226.77167"
+         width="623.62207"
+         id="rect4184-4-0-6-5-15-4-0-1-8"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6-8-7"
+         y="-156.59325"
+         x="91.393265"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan6948-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-156.59325"
+           x="91.393265"
+           sodipodi:role="line">BQ-2909</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6-8-6-8"
+         y="-123.32138"
+         x="150.82991"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan6948-0-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-123.32138"
+           x="150.82991"
+           sodipodi:role="line">MP2615</tspan></text>
+      <text
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/data/designs/Groupes_Benin/test-3.png"
+         transform="scale(1.0525098,0.95010992)"
+         sodipodi:linespacing="125%"
+         id="text3782-10-2-9-6-8-4-9-0-42-0-7-5-7-89-8-4-9-1-8-2-5-6-8-6-37-9"
+         y="-113.39478"
+         x="278.63065"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.79902792px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           id="tspan6948-0-2-43"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-113.39478"
+           x="278.63065"
+           sodipodi:role="line">AOZ1284</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:start;text-anchor:start;fill:#808080;fill-opacity:1"
+           y="-107.14478"
+           x="278.63065"
+           sodipodi:role="line"
+           id="tspan5152">6V/4A</tspan></text>
+    </g>
+  </g>
+</svg>
