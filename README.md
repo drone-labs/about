@@ -368,7 +368,9 @@ A last reboot and the work should be done :
     # umount /dev/mmcblk1p1
     # reboot
 ```
+#### 10.3 Monitoring Battery Level
 
+![Power Distribution Dirgram](https://github.com/drone-labs/about/Syno-pwr-1a.svg)
 
 
 ## Build Ardupilot
