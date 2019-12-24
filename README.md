@@ -378,6 +378,16 @@ of the BeagleBone Blue power distribution circuit :
 
 ![Power Distribution Diagram](images/Syno-pwr-1a.png)
 
+The solution I found relies on a module provided by the librobotcontrol project
+(https://github.com/StrawsonDesign/librobotcontrol) : **rc_battery_monitor**
+From what I understand, it is aimed to be run as a service in a debian based
+distribution. Following are the steps I used to build  it with buildroot tools
+
+* Build the shared library
+* build the examples (optional)
+* Build the rc_battery_monitor binary
+* Include the binary in the firmware image
+
 
 ## Build Ardupilot
 As stated above the firmware is shipped with a complete custom version of ardupilot suite.
