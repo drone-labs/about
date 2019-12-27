@@ -846,10 +846,9 @@ port, defined through the **-A** argument of Arduplane command line).
 
 
 ## ToDo
-Run from onboard flash  
 add QGroundControl tips  
 Build ardupilot examples  
-plug in the Sbus RC receiver signal to E4 Header  
+
 
 
 
