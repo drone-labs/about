@@ -374,7 +374,7 @@ to be plugged into the JST-XH **LIPO** header. **Check this point before buying*
 (Connector type and wiring diagram).
 Charging logic and protections are handled by the hardware. Monitoring the status Leds
 (BATT_LED_1 to BATT_LED_4) has to be done by software. Below is a simplified diagram
-of the BeagleBone Blue power distribution circuit :
+of the BeagleBone Blue power distribution circuit (USB not shown):
 
 ![Power Distribution Diagram](images/Syno-pwr-1a.png)
 
@@ -450,6 +450,7 @@ The builds should then work from each subdirectory :
 
 ##### 10.3.3 Copy the binary to the firmware image
 ```
+  $ cd $ARDUPILOT_BLUE/services/rc_battery_monitor
   $ scp bin/rc_battery_monitor root@192.168.7.2:/usr/sbin/
 ```
 
