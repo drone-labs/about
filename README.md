@@ -425,7 +425,6 @@ is used to make the copies.
   Add a new remote for the branch
   $ git remote add dlabs https://github.com/drone-labs/librobotcontrol.git
 ```
-
 ##### 10.3.2 Build the library, the examples (optional) and rc_battery_monitor
 In each subdirectory (library, examples and services/rc_battery_monitor), I have
 just changed the Compiler and Linker path in the Makefile :
@@ -447,13 +446,11 @@ The builds should then work from each subdirectory :
   $ cd library | examples | services/rc_battery_monitor 
   $ make
 ```
-
 ##### 10.3.3 Copy the binary to the firmware image
 ```
   $ cd $ARDUPILOT_BLUE/services/rc_battery_monitor
   $ scp bin/rc_battery_monitor root@192.168.7.2:/usr/sbin/
 ```
-
 ##### 10.3.4 Copy the library to the firmware image and create symlinks
 ```
   $ cd ../../library
@@ -466,7 +463,6 @@ Switch on Target side, then :
   # ln -sf librobotcontrol.so.1.0.4 librobotcontrol.so
 
 ```
-
 ##### 10.3.5 Update /etc/inittab to start rc_battery_monitor as a daemon
 Still on Target side :
 ```
