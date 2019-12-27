@@ -456,7 +456,7 @@ The builds should then work from each subdirectory :
   $ cd ../../library
   $ scp lib/librobotcontrol.so.1.0.4 root@192.168.7.2:/usr/lib/
 ```
-Switch on Target side, then :
+Switch to Target side, then :
 ```
   # cd /usr/lib
   # ln -sf librobotcontrol.so.1.0.4 librobotcontrol.so.1
@@ -608,7 +608,7 @@ Relog into the board and restart the application (a **reboot** is safer)
 	$ ssh root@192.168.7.2
 	# /etc/init.d/S60arduplane start
 
-While logged in, take a first look at the used board resources
+While logged in, take a first look at the board resources consumption :
 
 	# top
 	Mem: 33052K used, 464664K free, 60K shrd, 528K buff, 5124K cached
