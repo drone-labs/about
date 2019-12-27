@@ -384,12 +384,164 @@ From what I understand, it is aimed to be run as a service in a debian based
 distribution. Following are the steps I used to build  it with buildroot tools
 from my forked version of the project :
 
+* Get the sources
 * Build the shared library
-* build the examples (optional)
+* Build the examples (optional)
 * Build the rc_battery_monitor binary
-* Include the binary in the firmware image
+* Copy the binary to the firmware image
+* Copy the library to the firmware image and create symlinks
+* Update /etc/inittab to start rc_battery_monitor as a daemon
 
-TBD : Make a clean buildroot package!
+As in previous section, I use a Pololu USB AVR Programmer V2.1 and a homemade
+cable to get a terminal console (minicom). The Ethernet connection (via USB)
+is used to make the copies.
+
+##### 10.3.1 Get the sources
+
+```
+  $ export LC_ALL=C
+  $ cd $ARDUPILOT_BLUE
+  $ git clone https://github.com/drone-labs/librobotcontrol.git
+
+  $ cd librobotcontrol
+  $ git config user.name drone-labs
+  $ git commit -a --allow-empty-message -m ''
+  $ git fetch --prune
+  $ git submodule update --init --recursive
+    
+  See all available branches
+  $ git branch -a
+    * master
+      remotes/origin/HEAD -> origin/master
+      remotes/origin/master
+      remotes/origin/pwmfix
+      remotes/origin/testing
+      remotes/origin/v1.1
+
+  Create a new branch (the master branch needs to be up to date)
+  $ git pull
+  Create the local branch
+  $ git checkout -b dlabs
+    Switched to a new branch 'dlabs'
+
+  Add a new remote for the branch
+  $ git remote add dlabs https://github.com/drone-labs/librobotcontrol.git
+```
+
+##### 10.3.2 Build the shared library
+I have just changed the Compiler and Linker path in the Makefile :
+```
+  $ cd library
+  $ cat Makefile
+    ...
+    # buildroot Toolchain
+    PREFIX    := arm-linux
+    GCC_DIR   := ../../buildroot/output/host/bin
+    # compiler and linker binaries
+    CC        := ${GCC_DIR}/${PREFIX}-gcc
+    LINKER    := ${GCC_DIR}/${PREFIX}-gcc
+    ...
+
+  $ make
+    Done making lib/librobotcontrol.so.1.0.4
+```
+
+##### 10.3.3 Build the examples
+As stated above, the Compiler and Linker path are the only things to be
+adjusted in the Makefile :
+```
+  $ cd ../examples
+  $ cat Makefile
+    ...
+    # buildroot Toolchain
+    PREFIX    := arm-linux
+    GCC_DIR   := ../../buildroot/output/host/bin
+    # compiler and linker binaries
+    CC        := ${GCC_DIR}/${PREFIX}-gcc
+    LINKER    := ${GCC_DIR}/${PREFIX}-gcc
+    ...
+
+  $ make
+    made: bin/rc_calibrate_gyro
+    made: bin/rc_test_vector
+    .
+    .
+    made: bin/rc_calibrate_dsm
+```
+
+##### 10.3.4 Build the rc_battery_monitor binary
+Once again,  the Compiler and Linker path are the only things to be
+adjusted in the Makefile :
+```
+  $ cd ../services/rc_battery_monitor
+  $ cat Makefile
+    ...
+    # buildroot Toolchain
+    PREFIX    := arm-linux
+    GCC_DIR   := ../../buildroot/output/host/bin
+    # compiler and linker binaries
+    CC        := ${GCC_DIR}/${PREFIX}-gcc
+    LINKER    := ${GCC_DIR}/${PREFIX}-gcc
+    ...
+
+  $ make
+    made bin/rc_battery_monitor
+```
+
+##### 10.3.5 Copy the binary to the firmware image
+```
+  $ scp bin/rc_battery_monitor root@192.168.7.2:/usr/sbin/
+```
+
+##### 10.3.6 Copy the library to the firmware image and create symlinks
+```
+  $ cd ../../library
+  $ scp lib/librobotcontrol.so.1.0.4 root@192.168.7.2:/usr/lib/
+```
+Switch on Target side, then :
+```
+  # cd /usr/lib
+  # ln -sf librobotcontrol.so.1.0.4 librobotcontrol.so.1
+  # ln -sf librobotcontrol.so.1.0.4 librobotcontrol.so
+
+```
+
+##### 10.3.7 Update /etc/inittab to start rc_battery_monitor as a daemon
+Still on Target side :
+```
+  $ cat /etc/inittab
+    ...
+    # Startup the system
+    ::sysinit:/bin/mount -t proc proc /proc
+    ::sysinit:/bin/mount -o remount,rw /
+    ::sysinit:/bin/mkdir -p /dev/pts /dev/shm
+    ::sysinit:/bin/mount -a
+    ::sysinit:/sbin/swapon -a
+    null::sysinit:/bin/ln -sf /proc/self/fd /dev/fd
+    null::sysinit:/bin/ln -sf /proc/self/fd/0 /dev/stdin
+    null::sysinit:/bin/ln -sf /proc/self/fd/1 /dev/stdout
+    null::sysinit:/bin/ln -sf /proc/self/fd/2 /dev/stderr
+    ::sysinit:/bin/hostname -F /etc/hostname
+    # start the Battery monitor as a daemon
+    null::respawn:/usr/sbin/rc_battery_monitor
+    # now run any rc scripts
+    ::sysinit:/etc/init.d/rcS
+
+    # Put a getty on the serial port
+    console::respawn:/sbin/getty -L  console 0 vt100 # GENERIC_SERIAL
+
+    # Stuff to do for the 3-finger salute
+    #::ctrlaltdel:/sbin/reboot
+
+    # Stuff to do before rebooting
+    ::shutdown:/etc/init.d/rcK
+    ::shutdown:/sbin/swapoff -a
+    ::shutdown:/bin/umount -a -r
+
+```
+
+
+
 
 ## Build Ardupilot
 As stated above the firmware is shipped with a complete custom version of ardupilot suite.
