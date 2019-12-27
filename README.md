@@ -385,9 +385,7 @@ distribution. Following are the steps I used to build  it with buildroot tools
 from my forked version of the project :
 
 * Get the sources
-* Build the shared library
-* Build the examples (optional)
-* Build the rc_battery_monitor binary
+* Build the library, the examples (optional) and the rc_battery_monitor binary
 * Copy the binary to the firmware image
 * Copy the library to the firmware image and create symlinks
 * Update /etc/inittab to start rc_battery_monitor as a daemon
@@ -428,10 +426,11 @@ is used to make the copies.
   $ git remote add dlabs https://github.com/drone-labs/librobotcontrol.git
 ```
 
-##### 10.3.2 Build the shared library
-I have just changed the Compiler and Linker path in the Makefile :
+##### 10.3.2 Build the library, the examples (optional) and rc_battery_monitor
+In each subdirectory (library, examples and services/rc_battery_monitor), I have
+just changed the Compiler and Linker path in the Makefile :
 ```
-  $ cd library
+  $ cd library | examples | services/rc_battery_monitor
   $ cat Makefile
     ...
     # buildroot Toolchain
@@ -442,58 +441,19 @@ I have just changed the Compiler and Linker path in the Makefile :
     LINKER    := ${GCC_DIR}/${PREFIX}-gcc
     ...
 
+```
+The builds should then work from each subdirectory :
+```
+  $ cd library | examples | services/rc_battery_monitor 
   $ make
-    Done making lib/librobotcontrol.so.1.0.4
 ```
 
-##### 10.3.3 Build the examples
-As stated above, the Compiler and Linker path are the only things to be
-adjusted in the Makefile :
-```
-  $ cd ../examples
-  $ cat Makefile
-    ...
-    # buildroot Toolchain
-    PREFIX    := arm-linux
-    GCC_DIR   := ../../buildroot/output/host/bin
-    # compiler and linker binaries
-    CC        := ${GCC_DIR}/${PREFIX}-gcc
-    LINKER    := ${GCC_DIR}/${PREFIX}-gcc
-    ...
-
-  $ make
-    made: bin/rc_calibrate_gyro
-    made: bin/rc_test_vector
-    .
-    .
-    made: bin/rc_calibrate_dsm
-```
-
-##### 10.3.4 Build the rc_battery_monitor binary
-Once again,  the Compiler and Linker path are the only things to be
-adjusted in the Makefile :
-```
-  $ cd ../services/rc_battery_monitor
-  $ cat Makefile
-    ...
-    # buildroot Toolchain
-    PREFIX    := arm-linux
-    GCC_DIR   := ../../buildroot/output/host/bin
-    # compiler and linker binaries
-    CC        := ${GCC_DIR}/${PREFIX}-gcc
-    LINKER    := ${GCC_DIR}/${PREFIX}-gcc
-    ...
-
-  $ make
-    made bin/rc_battery_monitor
-```
-
-##### 10.3.5 Copy the binary to the firmware image
+##### 10.3.3 Copy the binary to the firmware image
 ```
   $ scp bin/rc_battery_monitor root@192.168.7.2:/usr/sbin/
 ```
 
-##### 10.3.6 Copy the library to the firmware image and create symlinks
+##### 10.3.4 Copy the library to the firmware image and create symlinks
 ```
   $ cd ../../library
   $ scp lib/librobotcontrol.so.1.0.4 root@192.168.7.2:/usr/lib/
@@ -506,7 +466,7 @@ Switch on Target side, then :
 
 ```
 
-##### 10.3.7 Update /etc/inittab to start rc_battery_monitor as a daemon
+##### 10.3.5 Update /etc/inittab to start rc_battery_monitor as a daemon
 Still on Target side :
 ```
   # cat /etc/inittab
