@@ -185,7 +185,7 @@ to enable it, 2 files need to be mofified :
 
 After a reboot, wifi should now be active, **but it is not the case!**
 I still don't know why, but in a ssh session, a manual start works
-(nice reader lost here, will you please help me?) :
+(any help would be appreciated!) :
 
 ```
   # /etc/init.d/S60arduplane stop
@@ -509,7 +509,7 @@ Switch on Target side, then :
 ##### 10.3.7 Update /etc/inittab to start rc_battery_monitor as a daemon
 Still on Target side :
 ```
-  $ cat /etc/inittab
+  # cat /etc/inittab
     ...
     # Startup the system
     ::sysinit:/bin/mount -t proc proc /proc
